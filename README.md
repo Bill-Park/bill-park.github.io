@@ -1,3 +1,3 @@
-Bill's DIY'er Blog
+# Bill's DIY Blog
 
 Gravity Jekyll theme used
