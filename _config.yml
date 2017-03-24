@@ -8,11 +8,11 @@
 # Site settings
 title: Do-it-yourselfer
 email: tkddn0916@gmail.com
-description: The Liberal Jekyll Theme
+description: Dreaming Maker
 #baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bill-park.github.io" # the base hostname & protocol for your site
 github_username:  Bill-Park
-paginate: 6
+paginate: 5
 
 
 gems: [jekyll-paginate, kramdown]

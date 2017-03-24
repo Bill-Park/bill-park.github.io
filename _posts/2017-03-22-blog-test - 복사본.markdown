@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "First Post"
+category: home
+---
+
+이 블로그는 지킬(Jekyll)-그래비티(Gravity)테마를 이용하였습니다.
