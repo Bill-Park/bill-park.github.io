@@ -2,3 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 **.orig
+
+# images
+*.jpg
+*.png
