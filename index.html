@@ -4,8 +4,12 @@ layout: default
 
 <div class="home">
   
-  call mark down
-
+  <div class="post-content" itemprop="articleBody">
+	<br>
+	{% include about.html %}
+  </div>
+	
+  <h2>Posting list</h2>
   {% for post in paginator.posts%}
   <div class="post postContent">
     <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
