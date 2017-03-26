@@ -1,7 +1,0 @@
----
-layout: post
-title:  "First Post"
-category: science
----
-
-블로그 글쓰기 테스트

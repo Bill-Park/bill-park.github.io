@@ -276,11 +276,10 @@ pre {
  * Icons
  */
 .icon {
-
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: auto;
         vertical-align: middle;
 
         path {
@@ -288,6 +287,27 @@ pre {
         }
     }
 }
+
+.icon-geek {
+    > svg {
+        display: inline-block;
+        width: 100px;
+        height: auto;        
+        horizontal-align: left;
+        vertical-align: middle;
+    }
+}
+
+.icon-mail {
+    > svg {
+        display: inline-block;
+        width: 20px;
+        height: auto;        
+        horizontal-align: left;
+        vertical-align: middle;
+    }
+}
+
 
 .post {
   font-family: "Source Sans Pro";
@@ -339,7 +359,7 @@ pre {
   text-indent: 2px;
 }
 .postContent {
-  padding-top: 3.5em;
+  padding-top: 1.5em;
   text-align: center;
 }
 .postDate {
@@ -360,6 +380,13 @@ pre {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-indent: 3px;
+}
+.sub-title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-indent: 3px;
+  font-family: 'Josefin Sans';
 }
 /**
  * Site header
@@ -390,8 +417,8 @@ pre {
   font-family: 'Josefin Sans';
 }
 .exclamationMark {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 .site-navigation {
   color: #aaa;
@@ -401,7 +428,9 @@ pre {
   text-indent: 6px;
   font-family: 'Josefin Sans';
   font-weight: 300;
-  padding-top: 5em;
+  padding: 2em 0px 0.5em;
+  text-align: center;
+  border-bottom: 1px solid $grey-color-light;
 }
 .page-title {
   text-transform: uppercase;
@@ -477,7 +506,7 @@ pre {
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding-bottom: $spacing-unit;
 }
 .footer-heading {
   font-size: 18px;
@@ -505,19 +534,24 @@ pre {
 .footer-col {
   float: left;
   margin-bottom: $spacing-unit / 2;
+  padding-top: 10px;
   padding-left: $spacing-unit / 2;
 }
 .footer-col-1 {
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width: calc(25% - (#{$spacing-unit} / 2));
+}
+.footer-col-2 {
+  width: -webkit-calc(19% - (#{$spacing-unit} / 2));
+  width: calc(19% - (#{$spacing-unit} / 2));
+}
+.footer-col-3 {
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
   width: calc(35% - (#{$spacing-unit} / 2));
 }
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width: calc(20% - (#{$spacing-unit} / 2));
-}
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width: calc(45% - (#{$spacing-unit} / 2));
+.footer-col-4 {
+  width: -webkit-calc(21% - (#{$spacing-unit} / 2));
+  width: calc(21% - (#{$spacing-unit} / 2));
 }
 @include media-query($on-laptop) {
   .footer-col-1,
@@ -570,20 +604,18 @@ pre {
   margin-bottom: $spacing-unit;
 }
 .post-title {
-  font-size: 62px;
-
+  font-size: 30px;
   text-align: center;
   font-family: "PT Sans";
-  font-weight: 900;
+  font-weight: 500;
   @include media-query($on-laptop) {
     font-size: 36px;
   }
 }
 .post-content {
-  margin-bottom: $spacing-unit;
   padding-bottom: 3em !important;
   p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   h2 {
     font-size: 32px;
@@ -603,6 +635,27 @@ pre {
       font-size: 18px;
     }
   }
+}
+
+.recent-posting {
+  font-size: 32px;
+  @include media-query($on-laptop) {
+      font-size: 28px;
+  }
+}
+
+.mailaddress {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-indent: 6px;
+  font-family: "PT Sans";
+}
+
+.username {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-indent: 6px;
+  font-family: "PT Sans";
 }
 
 /**

@@ -9,7 +9,7 @@ layout: default
 	{% include about.html %}
   </div>
 	
-  <h2>Posting list</h2>
+  <div class="recent-posting">Recent Posting</div>
   {% for post in paginator.posts%}
   <div class="post postContent">
     <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
@@ -21,9 +21,7 @@ layout: default
     <div class="postTitle">
     <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
     </div>
-    <div class="postExt">
-   {{ post.content | strip_html | truncate:200}}
-    </div>
+    
   </div>
 
   {% endfor %}
@@ -48,17 +46,7 @@ layout: default
     {% endif %}
     </nav>
   {% endif %}
-  <!--<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>-->
+  
 
 
 

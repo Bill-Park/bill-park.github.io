@@ -1,15 +1,10 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading small-site-title">{{ site.title }}</h2>
+<div class="wrapper">
+  <footer class="site-footer">
 
     <div class="footer-col-wrapper">
+    
       <div class="footer-col footer-col-1">
-        <ul class="contact-list footer-content">
-          <li>Powered By <a href="http://github.com/hemangsk/Gravity">Gravity</a></li>
-
-        </ul>
+        {% include icon-geekhub.html %}
       </div>
 
       <div class="footer-col footer-col-2 footer-content">
@@ -28,11 +23,18 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3 site-description">
-        <p>{{ site.description }}</p>
+      <div class="footer-col footer-col-3">
+        {% include icon-mail.html %}
+      </div>
+      
+      <div class="footer-col footer-col-4">
+        <ul class="contact-list footer-content">
+          <li>Powered By <a href="http://github.com/hemangsk/Gravity">Gravity</a></li>
+
+        </ul>
       </div>
     </div>
 
-  </div>
+  </footer>
 
-</footer>
+</dev>
