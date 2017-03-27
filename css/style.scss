@@ -611,6 +611,7 @@ pre {
   @include media-query($on-laptop) {
     font-size: 36px;
   }
+  margin-top: 12px;
 }
 .post-content {
   padding-bottom: 3em !important;
