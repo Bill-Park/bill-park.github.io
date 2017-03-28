@@ -48,8 +48,8 @@ R은 읽기, W는 쓰기, X는 실행에 관한 권한입니다.
 으로 abc.txt의 권한은 750이 됩니다.  
 umask는 파일의 권한에서 -(빼기)되는 부분으로 022이므로 ftp로 접속했을 때 권한은 530(750-022)이 됩니다.
 
-추가적인 설정에 대해서는 아래 블로그를 참조해 주시기 바랍니다.
-[vsftpd 설정](http://2factor.tistory.com/96)
+추가적인 설정에 대해서는 아래 블로그를 참조해 주시기 바랍니다.  
+[vsftpd 설정 참조](http://2factor.tistory.com/96)
 
 다음으로 chroot_list_enable 사용자 리스트를 편집해 주어야 합니다.
 ~~~
@@ -57,7 +57,6 @@ $sudo nano /etc/vsftpd.chroot_list
 ~~~
 
 안에 유저만 적어주면 됩니다.
-pi
 
 ![chroot_list](https://drive.google.com/uc?id=0B_CtpwiAk5hIeXhSaXZaQTBfbG8)
 
@@ -66,7 +65,7 @@ vsftpd를 다시 실행합니다.
 $sudo service vsftpd restart
 ~~~
 
-ftp 클라이언트를 이용해도 되지만 실험용으로 웹 브라우저(저는 크롬)를 사용하였습니다.
+ftp 클라이언트를 이용해도 되지만 실험용으로 웹 브라우저(여기서는 크롬)를 사용하였습니다.
 
 브라우저의 주소창에 아래와 같이 입력해 줍니다.
 ~~~
@@ -83,7 +82,7 @@ ftp://pi@123.456.789.101:21 (포트입력 전 콜론 주의)
 ![ftp_login](https://drive.google.com/uc?id=0B_CtpwiAk5hITXVLb09mME5WM1E)
 
 사용자 이름에는 유저이름(pi)
-비밀번호는 로그인 할 때의 비밀번호와 같습니다.(기본은 raspberry)
+비밀번호는 로그인 할 때의 비밀번호와 같습니다.(기본 raspberry)
 
 ![ftp_login](https://drive.google.com/uc?id=0B_CtpwiAk5hIRDdQZ2NURTI3X3M)
 
