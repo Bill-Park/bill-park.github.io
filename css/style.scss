@@ -19,7 +19,7 @@ $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 33%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #aaa !important;
+    color: #0f0f0f !important;
     text-decoration: none;
 
     &:visited {
@@ -437,7 +437,7 @@ pre {
   letter-spacing: 2px;
   text-indent: 2px;
   font-family: "PT Sans";
-  font-size: 12px;
+  font-size: 22px;
   text-align:center;
 }
 .page-tagline {
