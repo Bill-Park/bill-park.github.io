@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "구글 드라이브를 이용하여 지킬에 이미지 올리기"
-category: python
+categories: [python, chat]
 ---
 
 ## Upload image to Jekyll blog using Google Drive
