@@ -51,7 +51,6 @@ $sudo mount -t ntfs -o uid=pi,gid=pi /dev/sda1 /mnt/usb1 #마운트합니다.
 
 uid와 gid는 마운트 한 폴더의 소유자, 소유그룹을 의미합니다.
 
-
 ![mount_error](https://drive.google.com/uc?id=0B_CtpwiAk5hIWnhzeHRza0kySlE)
 
 그러면 위와같이 에러가 발생합니다.
@@ -178,8 +177,44 @@ $sudo service transmission-daemon reload
 **토렌트를 함부로 사용하다가 저작권법 위반으로 처벌받을 수 있습니다.**
 
 
+## 추가내용
+
+FTP 서버와 연동 사용시에 경로가 /mnt 안일경우 에러가 발생하는 것을 확인했습니다.
+
+따라서 usb 마운트 위치와 transmission의 위치를 변경해 주어야 합니다.
+
+usb 마운트 위치는 fstab의 설정을 바꿔주면 됩니다.
+
+**/etc/fstab**
+
+이부분을
+~~~
+/dev/sda1 /mnt/usb1 ntfs defaults,uid=1000,gid=1000 0 0
+~~~
+아래와 같이 바꿔줍니다.
+~~~
+/dev/sda1 /home/pi/usb1 ntfs defaults,uid=1000,gid=1000 0 0
+~~~
+
+transmission의 경우 settings.json을 바꿔주면 됩니다.
+
+**/etc/transmission-daemon/settings.json**
+
+이부분을
+~~~
+"download-dir": "/mnt/usb1/completed",
+"incomplete-dir": "/mnt/usb1/progress",
+~~~
+아래와 같이 바꿔줍니다.
+~~~
+"download-dir": "/home/pi/usb1/completed",
+"incomplete-dir": "/home/pi/usb1/progress",
+~~~
+
+
 참조 블로그 목록
 
 [https://www.modmypi.com/blog/how-to-mount-an-external-hard-drive-on-the-raspberry-pi-raspian](https://www.modmypi.com/blog/how-to-mount-an-external-hard-drive-on-the-raspberry-pi-raspian)
 
 [http://www.notforme.kr/archives/793](http://www.notforme.kr/archives/793)
+=
