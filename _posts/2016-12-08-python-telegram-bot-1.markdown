@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "python에서 telegram bot 사용하기 - 1"
+title:  "python으로 telegram bot 활용하기 - 1"
 category: python
 ---
+
+텔레그램 봇 만들기 1편
 
 프로젝트 도중에 휴대폰으로 알림을 주는 기능이 필요해서 찾다가 telegram bot(텔레그램 봇)을 사용하기로 하였습니다.  
 telegram bot은 telegram이라는 메신저 앱에서 사용 가능한 bot(로봇과 비슷합니다.)입니다.  
@@ -26,11 +28,11 @@ BotFather과 대화로 bot을 생성하고 여러 기능을 설정할 수 있습
 
 대화상대에서 BotFather를 검색하여 추가해 줍니다.
 
-![1](https://drive.google.com/uc?id=0B_CtpwiAk5hIOTU1Vk5BUURNY0U)
+![1](https://drive.google.com/uc?id=0B_CtpwiAk5hIZHA0ZFhEZUhzSTA)
 ~~~
 /start
 ~~~
-![2](https://drive.google.com/uc?id=0B_CtpwiAk5hIN3JaSUJBT0g0M0E)
+![2](https://drive.google.com/uc?id=0B_CtpwiAk5hIejZ1NGdTOWRXVWM)
 
 라는 메세지를 보내면 시작할 수 있습니다. 여러가지 설명이 나오며 bot을 먼저 만들어야 하기에
 ~~~
@@ -54,7 +56,7 @@ BotFather과 대화로 bot을 생성하고 여러 기능을 설정할 수 있습
 전체 과정은 아래와 같습니다.  
 (user name 짓는 부분에서 중복되면서 약간의 편집이 있었습니다. 그림판 죄송합니다 ㅠㅠ)
 
-![4](https://drive.google.com/uc?id=0B_CtpwiAk5hIejZ1NGdTOWRXVWM)
+![4](https://drive.google.com/uc?id=0B_CtpwiAk5hIN3JaSUJBT0g0M0E)
 
 마지막에 검은색 박스로 쳐진 부분이 있습니다. 
 이 부분은 token(토큰)으로 xxxx:yyyyyy 형태로 이루어 져 있습니다.  
@@ -154,7 +156,7 @@ bot.sendMessage(chat_id = chat_id, text="저는 봇입니다.")
 ~~~
 그러면 bot이 메세지를 보낸 것을 확인할 수 있습니다.
 
-![5](https://drive.google.com/uc?id=0B_CtpwiAk5hIZHA0ZFhEZUhzSTA)
+![5](https://drive.google.com/uc?id=0B_CtpwiAk5hIOTU1Vk5BUURNY0U)
 
 이상으로 python에서 telegram bot 만들기를 마치도록 하겠습니다.
 

@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "python에서 telegram bot 사용하기 - 2"
+title:  "python으로 telegram bot 활용하기 - 2"
 category: python
 ---
+
+텔레그램 봇 만들기 2편
 
 저번 시간에 이어 telegram bot을 이용하여 채널에 메세지를 보내보도록 하겠습니다.
 
