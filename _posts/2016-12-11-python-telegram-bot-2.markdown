@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "python으로 telegram bot 활용하기 - 2"
-category: python
+category: coding
 ---
 
 텔레그램 봇 만들기 2편

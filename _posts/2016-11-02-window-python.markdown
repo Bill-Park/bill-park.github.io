@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "윈도우에서 python 시작하기(작업환경 구축)"
-category: python
+category: coding
 ---
 
 이떄까지는 mac 혹은 linux(Raspbian) 환경에서 여러 코딩을 해왔습니다.  

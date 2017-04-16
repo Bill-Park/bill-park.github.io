@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코딩을 어떻게 배웠는가"
-category: chat
+categories: [chat, coding]
 ---
 
 지난번 글에 '언어가 안 돼서 낯설어서 안 된다.' 라는 말을 했는데 주변 사람들의 의견과 제 생각을 다시 정리해보니 아니라는 생각이 들었습니다.  

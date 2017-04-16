@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "윈도우에서 지킬 설치하기"
-category: chat
+category: coding
 ---
 
 ## Install Jekyll on Windows 10
