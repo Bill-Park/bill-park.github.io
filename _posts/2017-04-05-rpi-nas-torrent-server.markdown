@@ -217,4 +217,3 @@ transmission의 경우 settings.json을 바꿔주면 됩니다.
 [https://www.modmypi.com/blog/how-to-mount-an-external-hard-drive-on-the-raspberry-pi-raspian](https://www.modmypi.com/blog/how-to-mount-an-external-hard-drive-on-the-raspberry-pi-raspian)
 
 [http://www.notforme.kr/archives/793](http://www.notforme.kr/archives/793)
-=
