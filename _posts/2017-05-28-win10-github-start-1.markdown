@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Github 시작하기 - repository 만들기"
+title:  "Github 시작하기 - GUI 사용하기"
 category: coding
 ---
 
@@ -156,6 +156,6 @@ first.txt가 있는것을 확인할 수 있습니다.
 
 여기까지 github GUI 사용법이였습니다.
 
-다음엔 CLI 사용법과 사용하는 명령어에 대한 설명을 가지고 오도록 하겠습니다.
+다음엔 CLI 사용법입니다.
 
 감사합니다.
