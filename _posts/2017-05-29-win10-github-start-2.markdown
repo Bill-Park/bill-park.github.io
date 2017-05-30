@@ -62,7 +62,7 @@ GitHubDesktop 폴더가 열립니다.
 
 ![12](https://goo.gl/YV7UhG)
 
-**시스템 변수의 PATH**를 누른 뒤 **편집**을 클릭합니다.
+**시스템 변수의 Path**를 누른 뒤 **편집**을 클릭합니다.
 
 ![13](https://goo.gl/4k4Euj)
 
@@ -77,6 +77,8 @@ GitHubDesktop 폴더가 열립니다.
 ### 2. 명령 프롬프트에서 git 명령어 사용하기
 
 윈도우키를 누른 뒤 cmd를 입력하여 명령 프롬프트를 실행합니다.
+
+혹은 실행(Ctrl + R)을 누른 뒤 cmd를 입력해도 됩니다.
 
 ![16](https://goo.gl/a86mWu)
 
