@@ -16,19 +16,19 @@ api를 사용하기 위해 권한을 받아야 합습니다.
 
 ![enable_api](https://goo.gl/dVqmTt)
 
-***Create a project***를 선택한 후 ***Continue***를 클릭합니다.
+**Create a project**를 선택한 후 **Continue**를 클릭합니다.
 
 ![credential](https://goo.gl/1Je92a)
 
 Google Drive Api를 사용할 수 있게 되었습니다.
 
-***Go to credentials***를 클릭합니다.
+**Go to credentials**를 클릭합니다.
 
 Cancel을 눌러 빠져나옵니다.
 
 ![oauth](https://goo.gl/Mu11tR)
 
-***OAuth consent screen***을 클릭합니다.
+**OAuth consent screen**을 클릭합니다.
 
 ![oauth_make](https://goo.gl/x7hMAB)
 
@@ -44,13 +44,13 @@ Credentials로 돌아와 Create credentials - OAuth client ID를 클릭합니다
 
 Other를 선택하고 Create를 클릭합니다.
 
-![download_json](https://goo.gl/o8AdvC)
+![download_json](https://goo.gl/Ajurcy)
 
 나오는 결과창은 OK를 눌러 닫은 뒤 다운로드 마크를 눌러 Json파일을 다운받습니다.
 
 다운받은 json파일은 client_secret_~~~~~~~~~~.json 으로 되어있을 것입니다.
 
-이를 ***client_secret_drive.json*** 로 바꿔줍니다.
+이를 **client_secret_drive.json** 로 바꿔줍니다.
 
 ![folder](https://goo.gl/84drra)
 
@@ -113,7 +113,7 @@ for file_title in FILES :
 
 실행시키면 다음과 같은 창이 뜰 것입니다.
 
-![select_google_id](https://goo.gl/xMSbhf)
+![select_google_id](https://goo.gl/X79Ssn)
 
 여러 아이디가 로그인 되어있다면 로그인 할 아이디를 선택해 줍니다.
 
@@ -137,6 +137,6 @@ api 사용을 위한 준비가 완료되었습니다.
 
 구글드라이브에 들어가보면 위와같이 업로드가 완료된 것을 볼 수 있습니다.
 
-이상 ***python에서 google drive api 사용하여 파일 업로드하기*** 입니다.
+이상 **python에서 google drive api 사용하여 파일 업로드하기** 입니다.
 
 
