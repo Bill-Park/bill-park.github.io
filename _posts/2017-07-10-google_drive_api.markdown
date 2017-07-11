@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "python으로 구글 드라이브 api 파일 업로드하기"
+title:  "python 구글 드라이브 api로 파일 업로드하기"
 category: coding
 ---
 
@@ -14,7 +14,7 @@ api를 사용하기 위해 권한을 받아야 합습니다.
 
 위 링크에 접속합니다.
 
-![enable_api](https://goo.gl/8o9Kfz)
+![enable_api](https://goo.gl/dVqmTt)
 
 ***Create a project***를 선택한 후 ***Continue***를 클릭합니다.
 
