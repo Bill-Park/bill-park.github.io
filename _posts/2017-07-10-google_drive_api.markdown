@@ -14,11 +14,11 @@ api를 사용하기 위해 권한을 받아야 합습니다.
 
 위 링크에 접속합니다.
 
-![enable_api](https://goo.gl/dVqmTt)
+![1_enable_api](https://goo.gl/1a6wrT)
 
 **Create a project**를 선택한 후 **Continue**를 클릭합니다.
 
-![credential](https://goo.gl/1Je92a)
+![2_credential](https://goo.gl/PnQnHC)
 
 Google Drive Api를 사용할 수 있게 되었습니다.
 
@@ -26,25 +26,25 @@ Google Drive Api를 사용할 수 있게 되었습니다.
 
 Cancel을 눌러 빠져나옵니다.
 
-![oauth](https://goo.gl/Mu11tR)
+![3_oauth](https://goo.gl/Dfs6L7)
 
 **OAuth consent screen**을 클릭합니다.
 
-![oauth_make](https://goo.gl/x7hMAB)
+![4_oauth_make](https://goo.gl/cyCfUc)
 
 Email을 확인하고 Product name을 적어줍니다.
 
 save를 눌러 저장해 줍니다.
 
-![credential](https://goo.gl/zMcq23)
+![5_credential](https://goo.gl/QED3Se)
 
 Credentials로 돌아와 Create credentials - OAuth client ID를 클릭합니다.
 
-![create_client_id](https://goo.gl/gEJSNE)
+![6_create_client_id](https://goo.gl/gxWGCL)
 
 Other를 선택하고 Create를 클릭합니다.
 
-![download_json](https://goo.gl/Ajurcy)
+![7_download_json](https://goo.gl/PpdNbo)
 
 나오는 결과창은 OK를 눌러 닫은 뒤 다운로드 마크를 눌러 Json파일을 다운받습니다.
 
@@ -52,7 +52,7 @@ Other를 선택하고 Create를 클릭합니다.
 
 이를 **client_secret_drive.json** 로 바꿔줍니다.
 
-![folder](https://goo.gl/84drra)
+![8_folder](https://goo.gl/uEdhZw)
 
 작업할 폴더를 만들고(저는 F:\python\drive_api) 안에 json파일을 넣어줍니다.
 
@@ -113,15 +113,15 @@ for file_title in FILES :
 
 실행시키면 다음과 같은 창이 뜰 것입니다.
 
-![select_google_id](https://goo.gl/X79Ssn)
+![9_select_google_id](https://goo.gl/PG1Ljo)
 
 여러 아이디가 로그인 되어있다면 로그인 할 아이디를 선택해 줍니다.
 
-![api_allow](https://goo.gl/sTJRUL)
+![10_api_allow](https://goo.gl/2gPkaB)
 
 허용을 눌러줍니다.
 
-![api_success](https://goo.gl/hwEUj9)
+![11_api_success](https://goo.gl/JR4zzw)
 
 api 사용을 위한 준비가 완료되었습니다.
 
@@ -129,11 +129,11 @@ api 사용을 위한 준비가 완료되었습니다.
 
 이 파일은 token값등 구글 계정의 권한을 일부 가지고 있으므로 외부 공개를 주의해 주시기 바랍니다.
 
-![upload_end](https://goo.gl/sUihVe)
+![12_upload_end](https://goo.gl/emddMy)
 
 업로드가 완료되면 위와 같이 출력될 것입니다.
 
-![google_drive](https://goo.gl/hCbXXH)
+![13_google_drive](https://goo.gl/VxMSmw)
 
 구글드라이브에 들어가보면 위와같이 업로드가 완료된 것을 볼 수 있습니다.
 
