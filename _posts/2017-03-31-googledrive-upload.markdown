@@ -45,7 +45,7 @@ img/ 같은 폴더를 이용하여 이미지 주소로 활용하는 방법도 �
 
 사진의 주소를 얻기 위해서는 
 
-![get-image](https://drive.google.com/uc?id=0B_CtpwiAk5hIa09XcjFzRzk4R1U)
+![get-image](https://goo.gl/vwxnFD)
 
 **파일-우클릭-공유 가능한 링크 가져오기** 를 클릭하면 됩니다.
 
