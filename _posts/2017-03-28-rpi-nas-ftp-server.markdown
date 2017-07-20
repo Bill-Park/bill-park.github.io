@@ -31,7 +31,7 @@ chroot_list_file=/etc/vsftpd.chroot_list # chroot_list_enable 사용자 리스�
 local_umask 부분은 linux 계열의 특징이라 할 수 있습니다.  
 linux 계열에서 파일에는 아래와 같은 권한이 있습니다.
 
-|  소유자  |-소유그룹-|   전체  |
+|  소유자  |-소유그룹-|  전체  |
 |:---------|:--------:|-------:|
 |   R(4)   |   R(4)   |  R(4)  |
 |   W(2)   |   W(2)   |  W(2)  |
@@ -56,9 +56,9 @@ umask는 파일의 권한에서 -(빼기)되는 부분으로 022이므로 ftp로
 $sudo nano /etc/vsftpd.chroot_list
 ~~~
 
-안에 유저만 적어주면 됩니다.
+안에 유저명만 적어주면 됩니다.
 
-![chroot_list](https://drive.google.com/uc?id=0B_CtpwiAk5hIeXhSaXZaQTBfbG8)
+저는 pi이므로 pi를 적어주었습니다.
 
 vsftpd를 다시 실행합니다.
 ~~~
