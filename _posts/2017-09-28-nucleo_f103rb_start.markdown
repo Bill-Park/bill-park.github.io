@@ -1,0 +1,120 @@
+---
+layout: post
+title:  "nucleo f103rb 사용하기 - 소개 및 LED 켜고 끄기(LED Blink)"
+categories: [avr_arm, stm32]
+---
+
+nucleo f103rb는 STM32F103RB 칩을 기반으로 하는 개발 보드입니다.
+
+STM32F103RB는 ARM Cortex-M3 기반의 32bit 프로세서입니다.
+
+ST-LINK 라고 하는 프로그래머이자 디버거가 내장되어 있으며 mini-b 커넥터로 연결합니다.
+
+최대 72MHz의 클럭, 128KB의 플래쉬 메모리를 가지고 있으며 아두이노 우노와 핀 배열이 비슷합니다.
+
+개발 툴로는 여러가지가 있지만 여기서는 STM32Cube MX와 Keil uVision5를 이용하여 사용합니다.
+
+STM32Cube MX는 핀의 기능 지정, 클럭 조정등 기본적인 환경을 GUI로 설정해 줍니다.
+
+위에서 설정한 환경을 기반으로 uVision5를 이용하여 코드를 짜게 됩니다.
+
+툴 설치는 아래 링크를 참조해 주시기 바랍니다.
+
+[https://www.instructables.com/id/STM32F103-Getting-started/](https://www.instructables.com/id/STM32F103-Getting-started/)
+
+### STM32Cube
+
+![New Project](https://goo.gl/Qit4iH)
+
+New Project를 눌러 새 프로젝트를 생성합니다.
+
+![select_chip](https://goo.gl/hy8hDy)
+
+Part Number Search에 stm32f103rb를 검색합니다.
+
+Nucleo F1q03RB는 Package가 LQFP64칩이므로 아래것을 선택한 후 **Start Project**를 누릅니다.
+
+![pin_select](https://goo.gl/hPYxdK)
+
+왼쪽은 기능들의 상태를, 오른쪽에는 현재 핀의 상태를 나타냅니다.
+
+PA5번이 내장 LED(LD2)에 연결되어 있으므로 이를 **GPIO_Output** 모드로 설정해 줍니다.
+
+![pin_set](https://goo.gl/LDTVWK)
+
+핀이 설정될 경우 아래와 같이 초록색으로 바뀌면서 핀의 고유한 이름이 나옵니다.
+
+![pin_set_success](https://goo.gl/MWdkCK)
+
+**Configuration**을 눌러 설정 창으로 이동합니다.
+
+![configuration](https://goo.gl/4yXm6q)
+
+GPIO를 누르면 설정한 핀들이 나옵니다.
+
+1개밖에 없으므로 이를 클릭한 후 User Label을 입력해 줍니다.
+
+저는 internal_led로 해주었습니다.
+
+![GPIO_set](https://goo.gl/2MxGSZ)
+
+Ok를 눌러 나온 후 Project-Generate Code를 클릭합니다.
+
+혹은 Ctrl + Shift + G 를 입력하거나
+
+왼쪽 위의 톱니바퀴 모양을 눌러도 됩니다.
+
+![generate_code](https://goo.gl/g9LQvq)
+
+Project Name과 Project Location을 입력하고 Toolchain / IDE를 MDK-ARM V5로 설정합니다.
+
+![project_setting](https://goo.gl/kEHEBj)
+
+설정이 완료되었으면 **Ok**를 누릅니다.
+
+**Open Project**를 누릅니다.
+
+![open_project](https://goo.gl/wqKhv4)
+
+uVision5가 실행되면서 STM32Cube에서 설정한 내용이 코드로 변환되어 올라옵니다.
+
+![uvision_code](https://goo.gl/AJiWuQ)
+
+### uVision5
+
+Application/User의 main.c에서 코딩을 해줍니다.
+
+102번 줄(/* USER CODE BEGIN 3 */) 밑에 코드를 넣어주면 됩니다.
+
+while문으로 감싸져 있어 무한 반복하게 됩니다.
+
+#### 97~108번줄
+
+~~~
+/* USER CODE BEGIN WHILE */
+  while (1)
+  {
+  /* USER CODE END WHILE */
+
+  /* USER CODE BEGIN 3 */
+		HAL_GPIO_WritePin(internal_led_GPIO_Port, internal_led_Pin, GPIO_PIN_SET);
+		HAL_Delay(500) ;
+		HAL_GPIO_WritePin(internal_led_GPIO_Port, internal_led_Pin, GPIO_PIN_RESET);
+		HAL_Delay(500) ;
+  }
+  /* USER CODE END 3 */
+~~~
+
+완료되었으면 보드를 연결한 후 F7(Build) - F8(Download)를 눌러줍니다.
+
+아래와 같이 나오면 완료된 것입니다.
+
+![build_output](https://goo.gl/wtuNdw)
+
+보드의 검은색 버튼을 눌러주면 초록색 LED가 0.5초 간격으로 점멸하는 것을 확인할 수 있습니다.
+
+이상으로 LED Blink편을 마칩니다.
+
+<iframe width="315" height="520" src="https://www.youtube.com/embed/k6p0SiNyTzc" frameborder="0" allowfullscreen></iframe>
+
+
