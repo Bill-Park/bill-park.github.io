@@ -257,8 +257,17 @@ too many arguments to function 'void func(int)'
 
 Arduino IDE에서는 Default Parameters(디폴트 매개변수) 사용이 가능하기에 반드시 인자(Parameter, 함수에서 사용)의 개수와 인수(arguments, 함수 호출시 사용)의 개수가 같지는 않다.
 
+### 9. 변수 중복 에러
+
+~~~
+exit status 1
+conflicting declaration 'int i = 1'
+~~~
  
- 
+변수가 중복 선언되었을 경우 발생한다.
+
+이미 선언된 변수가 아닌지 확인해 본다.
+
 
 ## 업로드 에러  
 
