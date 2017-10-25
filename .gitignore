@@ -4,5 +4,5 @@ _site
 **.orig
 
 # images
-*.jpg
-*.png
+# *.jpg
+# *.png
