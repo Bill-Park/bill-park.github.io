@@ -76,3 +76,4 @@ F7(Build) - F8(Download) 로 보드에 프로그램을 올려줍니다.
 
 아래 영상과 같이 나오면 성공입니다.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FrUhnxjZpLQ" frameborder="0" gesture="media" allowfullscreen></iframe>
