@@ -24,7 +24,9 @@ PC13은 B1 버튼(파란색 버튼)과 연결되어 있습니다.
 
 ![]({{ site.url }}/img/nucleo/button_input/5.png)
 
-GPIO를 눌러 핀 설정창을 띄운 뒤 PC13~~ 부분에 Pull-up 설정과 User Label을 적어줍니다.
+GPIO를 눌러 핀 설정창을 띄운 뒤 PC13~~ 부분에 User Label을 적어줍니다.
+
+회로에 자체적으로 Pull-up이 되어있으므로 pull-up, pull-down은 지정하지 않습니다.
 
 ![]({{ site.url }}/img/nucleo/button_input/6.png)
 
