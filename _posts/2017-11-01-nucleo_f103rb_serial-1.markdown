@@ -4,15 +4,15 @@ title:  "nucleo f103rb 사용하기 - 시리얼 통신 - 1"
 categories: [avr_arm, stm32]
 ---
 
+nucleo f103rb에는 USART통신을 최대 3채널까지 사용할 수 있습니다.
+
+이중 usb단자로 연결되어 있는 USART2번 채널을 이용하여 시리얼 통신을 해 보도록 하겠습니다.
+
 ### STM32Cube
 
 USART2의 Mode를 Asynchronous로 설정해 줍니다.
 
 ![]({{ site.url }}/img/nucleo/serial_1/1.png)
-
-Clock Configuration에서 Clock을 다음과 같이 설정해 줍니다.
-
-![]({{ site.url }}/img/nucleo/serial_1/2.png)
 
 Configuration에서 USART2를 눌러 설정창으로 들어갑니다.
 
