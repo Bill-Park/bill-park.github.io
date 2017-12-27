@@ -8,6 +8,8 @@ categories: [avr_arm, stm32]
 
 이전 시간의 파일에서 File - Save Project As 혹은 Ctrl + A (다른이름으로 저장)를 눌러줍니다.
 
+![]({{ site.url }}/img/nucleo/serial_2/0.png)
+
 PC13에 GPIO_Input을, PA5에 GPIO_Output을 설정해 줍니다.
 
 ![]({{ site.url }}/img/nucleo/serial_2/1.png)
@@ -17,8 +19,6 @@ Configuration의 GPIO에서 PA5의 라벨에는 internal_led를
 PC13의 라벨에는 b1을 적어줍니다.
 
 ![]({{ site.url }}/img/nucleo/serial_2/2.png)
-
-Clock 설정등은 이전 시간에 설정을 완료했으므로 넘어가겠습니다.
 
 이제 코드를 생성(톱니바퀴)해 줍니다.
 
@@ -52,7 +52,7 @@ USER CODE BIGIN 3 에는 아래와 같이 추가해 줍니다.
 	RcvStat = HAL_UART_Receive(&huart2, UsartData, 1, 100) ;
 		
 	if (RcvStat == HAL_OK) {
-		if (UsartData[0] == 'a')   // if serial input is 'a', led on
+		if (UsartData[0] == 'a') {  // if serial input is 'a', led on
 			HAL_GPIO_WritePin(internal_led_GPIO_Port, internal_led_Pin, GPIO_PIN_SET) ;
 		} else if (UsartData[0] == 'b') {  // if serial input is 'a', led off
 			HAL_GPIO_WritePin(internal_led_GPIO_Port, internal_led_Pin, GPIO_PIN_RESET) ;
