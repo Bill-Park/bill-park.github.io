@@ -36,11 +36,7 @@ ADC1 왼쪽의 +를 눌러 하위 탭을 연 뒤 IN0를 체크해 줍니다.
 
 ![]({{ site.url }}/img/nucleo/adc/2.png)
 
-Clock Configuration은 아래와 같이 설정해 줍니다.
-
-![]({{ site.url }}/img/nucleo/adc/3.png)
-
-Configuration으로 넘어와서 설정해주어야 할 것은 USART2와 GPIO입니다.
+Configuration으로 넘어와서 USART2를 설정해 줍니다.
 
 ![]({{ site.url }}/img/nucleo/adc/4.png)
 
@@ -54,13 +50,7 @@ NVIC Settings로 이동하여 Enabled에 체크해 줍니다.
 
 ![]({{ site.url }}/img/nucleo/adc/6.png)
 
-Ok를 눌러 USART2 창을 닫고 GPIO 창을 열어줍니다.
-
-PA0-WKUP의 User Label을 a0로 설정해 줍니다. (이번 시간에는 사용하지 않기에 의미는 없습니다.)
-
-![]({{ site.url }}/img/nucleo/adc/7.png)
-
-톱니바퀴를 이용하여 코드를 생성해 줍니다.
+Ok를 눌러 USART2 창을 닫고 톱니바퀴를 이용하여 코드를 생성해 줍니다.
 
 ### uVision5
 
