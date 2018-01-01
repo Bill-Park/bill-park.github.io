@@ -18,7 +18,7 @@ external Interrupt 기능은 외부 입력으로 작동되는 인터럽트입니
 
 지난 시간의 파일에서 File - Save Project As를 눌러 다른 프로그램으로 저장을 해줍니다.
 
-![]({{ site.url }}/img/nucleo/external_interrupt/1.png)
+![]({{ site.url }}/img/nucleo/external_interrupt/0.png)
 
 **Pinout - Clear Pinouts**를 눌러 핀 설정을 초기화해줍니다.
 
