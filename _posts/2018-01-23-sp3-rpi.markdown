@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "라즈베리파이로 BroadLink SP3 제어하기"
+categories: [coding]
+---
+
+날이 너무 추워서 방에 전기매트를 깔아두고 사용하고 있습니다.
+
+하지만 집에 와서 보면 차갑게 식어있는 매트만이 기다리고 있을 뿐입니다.
+
+원격으로 매트를 제어해서 집에 오면 따뜻한 공간이 있었으면 하는 생각이 들었습니다.
+
+그래서 BroadLink사에서 나온 SP3라는 WiFi 플러그를 구매하였습니다.
+
+전용 어플을 사용하여 제어할 수 있으며 시간 지정 동작(지정된 시간에 On/Off), 타이머(일정 시간 후 On/Off) 기능이 있습니다.
+
+어플로 원격 제어가 충분히 가능하지만 어플을 깔 휴대폰 공간도 없고 미리 켜는 걸 자주 까먹어서 자동화를 하기로 했습니다.
+
+### 라즈베리파이에서 SP3 제어하기
+
+라즈베리파이에서 SP3를 제어하기 위해선 SP3의 패킷을 알아낼 필요가 있습니다.
+
+패킷을 리버스 할 수도 있지만 빠른 진행을 위해 라이브러리를 사용하기로 하였습니다.
+
+[https://github.com/mjg59/python-broadlink](https://github.com/mjg59/python-broadlink)
+
+Python을 이용하여 BroadLink의 제품들을 제어할 수 있게 만들어진 라이브러리입니다.
+
+pip를 이용하여 라이브러리를 설치하고 테스트를 해보겠습니다.
+
+~~~
+sudo pip3 install broadlink
+~~~
+
+vim을 이용하여 테스트용 코드를 짜보았습니다.
+
+~~~
+import broadlink
+
+broadlink.setup('iptime102', '8040510q', 3)  # setup wifi
+
+devices = broadlink.discover(timeout=5)  # find devices
+
+try :
+    sp2 = devices[0]
+except Exception as e :
+    print(e)
+    sys.exit("devices not found")
+
+sp2.auth()  # get device data
+
+print(sp2.get_type())
+
+print(sp2.id)
+
+sp2.set_power(True)  # power on
+
+print(sp2.check_power())  # check state
+~~~
+
+실행시키면 아래와 같이 나오면서 전원이 켜지게 됩니다.
+
+![]({{ site.url }}/img/iot_electronic_mat/1.png)
+
+다음 2편에서는 온도 센서를 부착하여 이 값을 라즈베리파이로 보내보도록 하겠습니다.
+
+
