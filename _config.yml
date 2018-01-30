@@ -10,7 +10,7 @@ title: Do-it-yourselfer
 email: tkddn0916@gmail.com
 description: Dreaming Maker
 #baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://bill-park.github.io" #"https://blog.psangwoo.com" # the base hostname & protocol for your site
+url: "https://blog.psangwoo.com" # the base hostname & protocol for your site
 github_username:  Bill-Park
 paginate: 5
 
