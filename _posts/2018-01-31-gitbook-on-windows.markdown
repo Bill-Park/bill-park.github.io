@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "윈도우에서 깃북 제작 및 깃헙 호스팅하기"
+title:  "윈도우에서 깃북 제작 및 깃헙 페이지로 호스팅하기"
 categories: [coding]
 ---
 
