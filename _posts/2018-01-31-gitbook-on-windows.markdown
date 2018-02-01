@@ -173,3 +173,6 @@ GitHub Pages 설정을 위해 우측 상단에 표시된 Settings를 클릭합�
 
 이상으로 윈도우에서 GitHub Pages를 이용하여 GitBook 만들기를 마치겠습니다.
 
+### 참고 블로그
+
+[https://beomi.github.io/2017/11/20/Deploy-Gitbook-to-Github-Pages/](https://beomi.github.io/2017/11/20/Deploy-Gitbook-to-Github-Pages/)
