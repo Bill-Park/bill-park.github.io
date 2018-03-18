@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "무선 통신 주파수별 특징"
+title:  "무선 통신 주파수 목록"
 categories: [making]
 ---
 
