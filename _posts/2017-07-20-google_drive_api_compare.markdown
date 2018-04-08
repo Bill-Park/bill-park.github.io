@@ -27,7 +27,7 @@ fsutil file createnew 2mb.jpg 2097152
 (2097152 = 1024(kb) * 1024(mb) * 2)
 ~~~
 
-![248mb_file](https://goo.gl/KsnhRB)
+![]({{ site.img_url }}/googledrive_api/14.png)
 
 이를 10번씩 업로드 해 보았습니다.
 

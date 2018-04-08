@@ -8,7 +8,7 @@ categories: [chat, making]
 하나하나 읽어보다가(사실 제목부터 사전 찾아보았습니다.) 한번 정리해보자 싶어서 글을 적어 보았습니다.  
 (오역, 의역이 있을 수 있으며 제보 부탁드립니다.)
 
-![bill_of_rights](https://drive.google.com/uc?id=0B_CtpwiAk5hIdXVINkFkMmpUTWM)
+![]({{ site.img_url }}/makers_bill_of_rights/1.jpg)
 
  
 ### **원문**

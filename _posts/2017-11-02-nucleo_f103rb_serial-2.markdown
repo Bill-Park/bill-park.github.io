@@ -8,17 +8,17 @@ categories: [avr_arm, stm32]
 
 이전 시간의 파일에서 File - Save Project As 혹은 Ctrl + A (다른이름으로 저장)를 눌러줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_2/0.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_2/0.png)
 
 PC13에 GPIO_Input을, PA5에 GPIO_Output을 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_2/1.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_2/1.png)
 
 Configuration의 GPIO에서 PA5의 라벨에는 internal_led를
 
 PC13의 라벨에는 b1을 적어줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_2/2.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_2/2.png)
 
 이제 코드를 생성(톱니바퀴)해 줍니다.
 
@@ -72,14 +72,14 @@ USER CODE BIGIN 3 에는 아래와 같이 추가해 줍니다.
 
 RESET 버튼을 눌러 보드를 재시작하면 Hello! 문자가 나옵니다.
 
-![]({{ site.url }}/img/nucleo/serial_2/3.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_2/3.png)
 
 B1 버튼을 누르면 b_in이 나옵니다.
 
-![]({{ site.url }}/img/nucleo/serial_2/4.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_2/4.png)
 
 문자열 'a'를 보내면 led가 켜지고 'b'를 보내면 꺼지게 됩니다.
 
-![]({{ site.url }}/img/nucleo/serial_2/5.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_2/5.png)
 
 이상입니다.

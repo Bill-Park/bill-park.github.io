@@ -14,11 +14,11 @@ api를 사용하기 위해 권한을 받아야 합습니다.
 
 위 링크에 접속합니다.
 
-![1_enable_api](https://goo.gl/1a6wrT)
+![]({{ site.img_url }}/googledrive_api/1.png)
 
 **Create a project**를 선택한 후 **Continue**를 클릭합니다.
 
-![2_credential](https://goo.gl/PnQnHC)
+![]({{ site.img_url }}/googledrive_api/2.png)
 
 Google Drive Api를 사용할 수 있게 되었습니다.
 
@@ -26,25 +26,25 @@ Google Drive Api를 사용할 수 있게 되었습니다.
 
 Cancel을 눌러 빠져나옵니다.
 
-![3_oauth](https://goo.gl/Dfs6L7)
+![]({{ site.img_url }}/googledrive_api/3.png)
 
 **OAuth consent screen**을 클릭합니다.
 
-![4_oauth_make](https://goo.gl/cyCfUc)
+![]({{ site.img_url }}/googledrive_api/4.png)
 
 Email을 확인하고 Product name을 적어줍니다.
 
 save를 눌러 저장해 줍니다.
 
-![5_credential](https://goo.gl/QED3Se)
+![]({{ site.img_url }}/googledrive_api/5.png)
 
 Credentials로 돌아와 Create credentials - OAuth client ID를 클릭합니다.
 
-![6_create_client_id](https://goo.gl/gxWGCL)
+![]({{ site.img_url }}/googledrive_api/6.png)
 
 Other를 선택하고 Create를 클릭합니다.
 
-![7_download_json](https://goo.gl/PpdNbo)
+![]({{ site.img_url }}/googledrive_api/7.png)
 
 나오는 결과창은 OK를 눌러 닫은 뒤 다운로드 마크를 눌러 Json파일을 다운받습니다.
 
@@ -52,7 +52,7 @@ Other를 선택하고 Create를 클릭합니다.
 
 이를 **client_secret_drive.json** 로 바꿔줍니다.
 
-![8_folder](https://goo.gl/uEdhZw)
+![]({{ site.img_url }}/googledrive_api/8.png)
 
 작업할 폴더를 만들고(저는 F:\python\drive_api) 안에 json파일을 넣어줍니다.
 
@@ -113,15 +113,15 @@ for file_title in FILES :
 
 실행시키면 다음과 같은 창이 뜰 것입니다.
 
-![9_select_google_id](https://goo.gl/PG1Ljo)
+![]({{ site.img_url }}/googledrive_api/9.png)
 
 여러 아이디가 로그인 되어있다면 로그인 할 아이디를 선택해 줍니다.
 
-![10_api_allow](https://goo.gl/2gPkaB)
+![]({{ site.img_url }}/googledrive_api/10.png)
 
 허용을 눌러줍니다.
 
-![11_api_success](https://goo.gl/JR4zzw)
+![]({{ site.img_url }}/googledrive_api/11.png)
 
 api 사용을 위한 준비가 완료되었습니다.
 
@@ -129,11 +129,11 @@ api 사용을 위한 준비가 완료되었습니다.
 
 이 파일은 token값등 구글 계정의 권한을 일부 가지고 있으므로 외부 공개를 주의해 주시기 바랍니다.
 
-![12_upload_end](https://goo.gl/emddMy)
+![]({{ site.img_url }}/googledrive_api/12.png)
 
 업로드가 완료되면 위와 같이 출력될 것입니다.
 
-![13_google_drive](https://goo.gl/VxMSmw)
+![]({{ site.img_url }}/googledrive_api/13.png)
 
 구글드라이브에 들어가보면 위와같이 업로드가 완료된 것을 볼 수 있습니다.
 

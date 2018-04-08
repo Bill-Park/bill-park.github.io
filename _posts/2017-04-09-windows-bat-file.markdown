@@ -18,13 +18,13 @@ PC방에 가보면 출력장치를 전환하는 파일이 눈에 띕니다.
 
 **제어판 - 소리** 에 들어가보면 상단에 **재생** 이라는 탭이 있습니다.
 
-![sound](https://drive.google.com/uc?id=0B_CtpwiAk5hIeEwybk90ZW54LWM)
+![]({{ site.img_url }}/speaker_headphone/1.png)
 
 저는 스피커, Realtek Digital Output, 헤드폰 이라는 장치가 있습니다.
 
 만약 장치이름이 중복이라면 **해당 장치 우클릭 - 속성**을 눌러
 
-![name](https://drive.google.com/uc?id=0B_CtpwiAk5hIWmxNTTV6RzlZOXM)
+![]({{ site.img_url }}/speaker_headphone/2.png)
 
 이름을 바꿔주면 됩니다.
 
@@ -42,7 +42,7 @@ PC방에 가보면 출력장치를 전환하는 파일이 눈에 띕니다.
 
 그중 nircmd.exe를 실행시켜 봅니다.
 
-![nircmd](https://drive.google.com/uc?id=0B_CtpwiAk5hIS3lkeEZScHdfa28)
+![]({{ site.img_url }}/speaker_headphone/3.png)
 
 Windows Directory로 이동시켜서 사용해도 되고 그냥 사용하셔도 됩니다.
 
@@ -54,17 +54,17 @@ bat 파일은 Linux등의 sh 파일에 비하면 정말 간단하게 만들 수 
 
 메모장을 열고
 
-![blank_notepad](https://drive.google.com/uc?id=0B_CtpwiAk5hIdkZOcGtOamNDSWc)
+![]({{ site.img_url }}/speaker_headphone/4.png)
 
 원하는 명령어를 적어준 뒤 저장하면 됩니다.
 
-![command_notepad](https://drive.google.com/uc?id=0B_CtpwiAk5hIaDFLWXEtUWdLNU0)
+![]({{ site.img_url }}/speaker_headphone/5.png)
 
 저장할 때 주의할 점은 **텍스트 문서(\*.txt)**가 아니라 **모든 파일(\*.\*)**로 해주어야 합니다.
 
 텍스트문서로 저장할 경우 bat 파일이 아닌 txt 파일이 생성됩니다.
 
-![save_notepad](https://drive.google.com/uc?id=0B_CtpwiAk5hIWm9MUlpKMlQtLVE)
+![]({{ site.img_url }}/speaker_headphone/6.png)
 
 테스트를 해줍니다.
 
@@ -74,7 +74,7 @@ bat 파일은 Linux등의 sh 파일에 비하면 정말 간단하게 만들 수 
 
 저는 speaker와 headphone으로 저장하였습니다.
 
-![cmd_write](https://drive.google.com/uc?id=0B_CtpwiAk5hIUWU2X0dWU3VHMFk)
+![]({{ site.img_url }}/speaker_headphone/7.png)
 
 물론 bat파일을 더블클릭하여 직접 실행해 주어도 똑같이 작동합니다.
 

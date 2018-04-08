@@ -20,23 +20,23 @@ Interrupt는 말 그대로 무언가를 중단하고 실행하는 것을 말합�
 
 새로 파일을 만들어 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/1.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/1.png)
 
 **103rb** 라고 검색한 뒤 **LQFP64**를 선택하고 **Start Project**를 눌러줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/2.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/2.png)
 
 **TIM2**의 Clock Source를 Internal Clock으로 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/3.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/3.png)
 
 **PA5**를 **GPIO_Output**으로 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/4.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/4.png)
 
 **Clock Configuration**으로 이동하여 PLLCLK, PLLMul, APB1 Prescaler를 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/5.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/5.png)
 
 **Configuration**으로 이동하여 Control-TIM2를 눌러줍니다.
 
@@ -48,7 +48,7 @@ Counter Period는 클럭이 몇번 발생했을 때 인터럽트를 실행할 �
 
 **-1**을 해준 이유는 0에서부터 시작하기 때문에 1을 빼준 것입니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/6.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/6.png)
 
 클럭을 분주비 64000으로 나눠주었으므로 64000000(64MHz) / 64000 = 1000Hz, 0.001초마다 클럭이 발생합니다.
 
@@ -56,17 +56,17 @@ Counter Period는 클럭이 몇번 발생했을 때 인터럽트를 실행할 �
 
 **NVIC**로 이동하여 인터럽트를 사용하기 위해 Enabled에 체크해 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/7.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/7.png)
 
 System-GPIO를 클릭하여 PA5의 User Label을 **internal_led**로 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/8.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/8.png)
 
 이제 톱니바퀴를 눌러 코드를 생성해 줍니다.
 
 **Project Name**을 써준 뒤 **Toolchain / IDE**를 MDK-ARM V5로 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/timer_interrupt/9.png)
+![]({{ site.img_url }}/nucleo_f103rb/timer_interrupt/9.png)
 
 **OK**를 누르면 코드를 생성해 줍니다.
 

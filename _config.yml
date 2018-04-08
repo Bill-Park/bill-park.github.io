@@ -13,7 +13,7 @@ description: Dreaming Maker
 url: "https://blog.psangwoo.com" # the base hostname & protocol for your site
 github_username:  Bill-Park
 paginate: 5
-img_url: "https://s3.ap-northeast-2.amazonaws.com/img.psangwoo.com"
+img_url: "https://d2k4c07bmdw2ki.cloudfront.net"
 
 gems: [jekyll-paginate, kramdown]
 # Build settings

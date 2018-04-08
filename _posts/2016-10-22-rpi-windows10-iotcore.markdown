@@ -28,20 +28,19 @@ micro sd를 라즈베리파이에 꽂고 모니터 혹은 TV등에 hdmi to hdmi,
 
 그 후 전원을 연결하면 아래와 같은 화면이 나옵니다. windows 10 iot core를 선택하고 왼쪽 상단의 Install(키보드의 경우 'i') 을 클릭해 줍니다.
 
-
-![1](https://drive.google.com/uc?id=0B_CtpwiAk5hIblJXRHJHVDhLUkk)
+![]({{ site.img_url }}/rpi_windows10_iotcore/1.jpg)
 
 ### 3. 기다림
 
 이제 설치가 완료될 때 까지 기다리면 됩니다. 중간에 버전을 선택하는 듯한 부분이 나오는데(pre-release 의 경우 자료가 느릴 것을 우려하여) RTM 버전으로 선택해 주었습니다. 중간에 관련 개발자 분으로 추정되는 사진이 있어 찍어보았습니다.
 
-![2](https://drive.google.com/uc?id=0B_CtpwiAk5hIMVlXOGZxWEg1YTQ)
-![3](https://drive.google.com/uc?id=0B_CtpwiAk5hIVV9tSmRDSnlTQ0k)
-![4](https://drive.google.com/uc?id=0B_CtpwiAk5hIaEMxci1oVHExLXM)
+![]({{ site.img_url }}/rpi_windows10_iotcore/2.jpg)
+![]({{ site.img_url }}/rpi_windows10_iotcore/3.jpg)
+![]({{ site.img_url }}/rpi_windows10_iotcore/4.jpg)
 
 설치가 완료되면 아래와 같이 현재 상태가 나옵니다. (반사된 상황이 조금 부끄럽네요..)
 
-![5](https://drive.google.com/uc?id=0B_CtpwiAk5hIRkw0NGtpTFd0cWM)
+![]({{ site.img_url }}/rpi_windows10_iotcore/5.jpg)
 
 다음 시간에는 windows 10 iot 에서의 개발환경 구축, hello world 까지 시도해 보도록 하겠습니다.
 

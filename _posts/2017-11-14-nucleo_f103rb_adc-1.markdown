@@ -20,7 +20,7 @@ GND에 가변저항의 -를
 
 A0에 가변저항의 SIG를 연결해 줍니다.
 
-![]({{ site.url }}/img/nucleo/adc/circuit.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/circuit.png)
 
 ### STM32Cube
 
@@ -30,25 +30,25 @@ A0에 가변저항의 SIG를 연결해 줍니다.
 
 ADC1 왼쪽의 +를 눌러 하위 탭을 연 뒤 IN0를 체크해 줍니다.
 
-![]({{ site.url }}/img/nucleo/adc/1.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/1.png)
 
 마찬가지로 USART2의 하위탭을 연 뒤 Mode 에서 Asynchronous를 선택합니다.
 
-![]({{ site.url }}/img/nucleo/adc/2.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/2.png)
 
 Configuration으로 넘어와서 USART2를 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/adc/4.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/4.png)
 
 먼저 USART2를 눌러 Parameter Settings를 설정합니다.
 
 Baud Rate를 9600으로 설정해주면 됩니다.
 
-![]({{ site.url }}/img/nucleo/adc/5.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/5.png)
 
 NVIC Settings로 이동하여 Enabled에 체크해 줍니다.
 
-![]({{ site.url }}/img/nucleo/adc/6.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/6.png)
 
 Ok를 눌러 USART2 창을 닫고 톱니바퀴를 이용하여 코드를 생성해 줍니다.
 
@@ -99,6 +99,6 @@ USER CODE BEGIN 3 안에 ADC 값을 받아오고 출력하는 코드를 넣어�
 
 Serial 통신 프로그램을 실행하고 보드를 재시작합니다.
 
-![]({{ site.url }}/img/nucleo/adc/8.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/8.png)
 
 이상입니다.

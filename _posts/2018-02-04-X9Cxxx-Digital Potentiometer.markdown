@@ -28,7 +28,7 @@ categories: [coding]
 
 #### 1. 핀아웃(Pinout)
 
-![]({{ site.url }}/img/x9c/1.png)
+![]({{ site.img_url }}/x9c/1.png)
 
 각 핀의 이름과 위치가 나와 있습니다.
 
@@ -36,7 +36,7 @@ categories: [coding]
 
 #### 2. 핀 설명(Pin Descriptions)
 
-![]({{ site.url }}/img/x9c/2.png)
+![]({{ site.img_url }}/x9c/2.png)
 
 각 핀에 대한 설명입니다.
 
@@ -44,7 +44,7 @@ categories: [coding]
 
 #### 3. 한계치(Absolute Maximum Ratings)
 
-![]({{ site.url }}/img/x9c/3.png)
+![]({{ site.img_url }}/x9c/3.png)
 
 한계치에 대한 설명입니다.
 
@@ -54,7 +54,7 @@ categories: [coding]
 
 #### 4. 모드 선택(Mode Selection)
 
-![]({{ site.url }}/img/x9c/4.png)
+![]({{ site.img_url }}/x9c/4.png)
 
 모드 선택에 관해 표로 설명되어 있습니다.
 
@@ -92,7 +92,7 @@ UD핀을 HIGH로 만들고 INC 핀을 Down, UP (Up->Down일 때 변합니다.)�
 
 총 100 포인트가 있으며 초기화 후 100번의 하강 엣지가 발생하면 아날로그 신호가 최대치가 됩니다.
 
-![]({{ site.url }}/img/x9c/5.png)
+![]({{ site.img_url }}/x9c/5.png)
 
 아날로그 값의 흔들림이 있긴 하지만 순차적으로 오르는 것을 볼 수 있습니다.
 

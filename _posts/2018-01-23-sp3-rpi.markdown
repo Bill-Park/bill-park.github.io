@@ -37,7 +37,7 @@ vim을 이용하여 테스트용 코드를 짜보았습니다.
 ~~~
 import broadlink
 
-broadlink.setup('iptime102', '8040510q', 3)  # setup wifi
+broadlink.setup('iptime', '12345678', 3)  # setup wifi
 
 devices = broadlink.discover(timeout=5)  # find devices
 
@@ -60,6 +60,6 @@ print(sp2.check_power())  # check state
 
 실행시키면 아래와 같이 나오면서 전원이 켜지게 됩니다.
 
-![]({{ site.url }}/img/iot_electronic_mat/1.png)
+![]({{ site.img_url }}/iot_electronic_mat/1.png)
 
 감사합니다.

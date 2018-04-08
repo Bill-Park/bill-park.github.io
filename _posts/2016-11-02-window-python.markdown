@@ -35,8 +35,7 @@ Path를 찾아 시스템 변수의 편집(단축키 Alt + I)을 눌러 변수 �
 변수 값이 빈칸이 아니라면 맨 뒤에 ;(세미콜론)을 넣어준 뒤 경로를 적어줍니다.  
 cmd 창을 열어(실행(윈도우 + R) - cmd) python을 입력하여 테스트가 가능합니다.
 
-![1](https://drive.google.com/uc?id=0B_CtpwiAk5hIXzBDdFFOVGg1WUE)
-
+![]({{ site.img_url }}/window-python/1.jpg)
 
 ※참고자료 : [Alpha Beta Gamma님의 블로그](http://radiation.tistory.com/entry/%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98%EC%97%90-Python-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
 
@@ -52,7 +51,7 @@ easy_install pip
 ~~~
 그 후 위 명령어를 입력해 주면 pip 설치가 완료됩니다.
 
-![2](https://drive.google.com/uc?id=0B_CtpwiAk5hIVWxEQndWZkNVQ2M)
+![]({{ site.img_url }}/window-python/2.jpg)
 
 설치가 잘 되었는지 확인하려면
 ~~~
@@ -60,7 +59,7 @@ pip --version
 ~~~
 을 입력해 보면 됩니다.
 
-![3](https://drive.google.com/uc?id=0B_CtpwiAk5hIVnhCdXY5VEk2QTA)
+![]({{ site.img_url }}/window-python/3.jpg)
 
 저는 8.1.1 버전으로 나오네요.
 

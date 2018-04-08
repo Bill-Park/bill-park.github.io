@@ -14,65 +14,65 @@ git 파일이 있는 곳을 확인해야 합니다.
 
 바탕화면의 아이콘을 우클릭하고 **파일 위치 열기**를 클릭합니다.
 
-![1](https://goo.gl/yXHhvk)
+![]({{ site.img_url }}/github_cli/1.png)
 
 GitHubDesktop 폴더가 열립니다.
 
-![2](https://goo.gl/uXTTaU)
+![]({{ site.img_url }}/github_cli/2.png)
 
 **app~**로 들어갑니다.
 
-![3](https://goo.gl/0GdcJL)
+![]({{ site.img_url }}/github_cli/3.png)
 
 **resources**로 들어갑니다.
 
-![4](https://goo.gl/kqS5jO)
+![]({{ site.img_url }}/github_cli/4.png)
 
 **app**으로 들어갑니다.
 
-![5](https://goo.gl/Sb5fcB)
+![]({{ site.img_url }}/github_cli/5.png)
 
 **git**으로 들어갑니다.
 
-![6](https://goo.gl/5SIuem)
+![]({{ site.img_url }}/github_cli/6.png)
 
 **cmd**로 들어갑니다.
 
-![7](https://goo.gl/CiBv2J)
+![]({{ site.img_url }}/github_cli/7.png)
 
 안에 **git**파일이 있습니다.
 
 우클릭 - 속성을 클릭합니다.
 
-![8](https://goo.gl/181eRM)
+![]({{ site.img_url }}/github_cli/8.png)
 
 **위치**를 드래그하여 복사(Ctrl + C)합니다.
 
-![9](https://goo.gl/QcDZvn)
+![]({{ site.img_url }}/github_cli/9.png)
 
 왼쪽에 있는 **내 PC**를 우클릭 - 속성을 클릭합니다.
 
-![10](https://goo.gl/MGskOL)
+![]({{ site.img_url }}/github_cli/10.png)
 
 나오는 화면에서 **고급 시스템 설정**을 클릭합니다.
 
-![11](https://goo.gl/e2Io9q)
+![]({{ site.img_url }}/github_cli/11.png)
 
 **환경 변수**를 클릭합니다.
 
-![12](https://goo.gl/YV7UhG)
+![]({{ site.img_url }}/github_cli/12.png)
 
 **시스템 변수의 Path**를 누른 뒤 **편집**을 클릭합니다.
 
-![13](https://goo.gl/4k4Euj)
+![]({{ site.img_url }}/github_cli/13.png)
 
 **새로 만들기**를 클릭합니다.
 
-![14](https://goo.gl/tsSJkt)
+![]({{ site.img_url }}/github_cli/14.png)
 
 위에서 복사했던 **git** 파일의 위치를 붙여넣고 **확인**을 누릅니다.
 
-![15](https://goo.gl/M3x9Fl)
+![]({{ site.img_url }}/github_cli/15.png)
 
 ### 2. 명령 프롬프트에서 git 명령어 사용하기
 
@@ -80,21 +80,21 @@ GitHubDesktop 폴더가 열립니다.
 
 혹은 실행(Ctrl + R)을 누른 뒤 cmd를 입력해도 됩니다.
 
-![16](https://goo.gl/a86mWu)
+![]({{ site.img_url }}/github_cli/16.png)
 
 **git**을 입력하여 경로설정이 잘 되었는지 확인해줍니다.
 
-![17](https://goo.gl/3Hnlis)
+![]({{ site.img_url }}/github_cli/17.png)
 
 cd 명령어를 이용하여 지난 시간에 만든 저장소(repository)가 있는 폴더로 이동합니다.
 
-![18](https://goo.gl/smw5JJ)
+![]({{ site.img_url }}/github_cli/18.png)
 
 git status를 입력하여 현재 상태를 확인합니다.
 
 이는 GUI에서 스크린상에 뜨는 내용입니다.
 
-![19](https://goo.gl/i8q4A4)
+![]({{ site.img_url }}/github_cli/19.png)
 
 메모장을 이용하여 테스트용 파일을 하나 만들어 줍니다.
 
@@ -102,29 +102,29 @@ git status를 입력하여 현재 상태를 확인합니다.
 
 실제 소스코드로 테스트해도 괜찮습니다.
 
-![20](https://goo.gl/FSSAN8)
+![]({{ site.img_url }}/github_cli/20.png)
 
 **git status**를 입력하여 변경된 파일이 있는지 확인합니다.
 
-![21](https://goo.gl/2bRz6X)
+![]({{ site.img_url }}/github_cli/21.png)
 
 **git add .**을 입력하여 변경된 파일을 추가합니다.
 
 GUI에서 commit할 파일을 마우스로 클릭하는 것과 같습니다.
 
-![22](https://goo.gl/yBTfgk)
+![]({{ site.img_url }}/github_cli/22.png)
 
 **git commit -m "commit 내용"**을 입력하여 commit합니다.
 
 commit 내용을 입력하기 위해서 **-m**이 반드시 붙어있어야 합니다.
 
-![23](https://goo.gl/Q5iYM9)
+![]({{ site.img_url }}/github_cli/23.png)
 
 **git push origin master**를 입력하여 저장소에 업로드합니다.
 
 이때 push시 사용하는 User-name과 e-mail을 입력해 주어야 합니다.
 
-![24](https://goo.gl/gI3esJ)
+![]({{ site.img_url }}/github_cli/24.png)
 
 이상으로 CLI에서 사용하는 것까지 알아보았습니다.
 

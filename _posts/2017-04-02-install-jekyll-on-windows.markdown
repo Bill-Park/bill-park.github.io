@@ -16,13 +16,13 @@ category: coding
 
 [Ruby Downloads 바로가기](https://rubyinstaller.org/downloads/)
 
-![ruby_install](https://drive.google.com/uc?id=0B_CtpwiAk5hIMG02Q3ZNN0ZCb3M)
+![]({{ site.img_url }}/window_jekyll_install/1.png)
 
 exe 파일로 간단하게 설치할 수 있습니다.
 
 중간에 'PATH에 추가하시겠습니까?' 부분은 반드시 체크해 주시기 바랍니다.
 
-![ruby_path](https://drive.google.com/uc?id=0B_CtpwiAk5hIMWVCSkhvc0JSMFE)
+![]({{ site.img_url }}/window_jekyll_install/2.png)
 
 ### 2. Ruby DevKit 설치
 
@@ -32,7 +32,7 @@ exe 파일로 간단하게 설치할 수 있습니다.
 
 저는 2.3.3 64bit는 표시된 파일을 받으면 됩니다.
 
-![devkit_install](https://drive.google.com/uc?id=0B_CtpwiAk5hIRmRSWXRWT2RIMUk)
+![]({{ site.img_url }}/window_jekyll_install/3.png)
 
 실행하면 어디에 압축을 풀지 물어봅니다.
 
@@ -42,7 +42,7 @@ C:\devkit
 
 에 풀도록 하겠습니다.
 
-![devkit_unzip](https://drive.google.com/uc?id=0B_CtpwiAk5hITXFFTk5paVNpSnc)
+![]({{ site.img_url }}/window_jekyll_install/4.png)
 
 ### 3. Jekyll 및 부가기능 설치하기
 
@@ -74,7 +74,7 @@ ruby dk.rb init
 ruby dk.rb install
 ~~~
 
-![dk.rb](https://drive.google.com/uc?id=0B_CtpwiAk5hIT0RtLWpOSmNVaFk)
+![]({{ site.img_url }}/window_jekyll_install/5.png)
 
 위처럼 뜨면 완료된 것입니다.
 
@@ -105,7 +105,7 @@ jekyll new .
 
 명령어를 실행했을 때 아래와 같은 에러가 나올 수 있습니다.
 
-![gem_error](https://drive.google.com/uc?id=0B_CtpwiAk5hIWmRJUHc1Z3Y1NG8)
+![]({{ site.img_url }}/window_jekyll_install/6.png)
 
 minima 라는 gem(이때의 gem은 소스코드와 관련 문서를 의미합니다.)이 없다는 의미입니다.
 
@@ -142,6 +142,6 @@ jekyll serve
 
 을 입력하면 생성된 사이트를 볼 수 있습니다.
 
-![serve_site](https://drive.google.com/uc?id=0B_CtpwiAk5hILWdHRGpodGRlRFU)
+![]({{ site.img_url }}/window_jekyll_install/7.png)
 
 다들 행복한 블로깅 되시기 바랍니다.

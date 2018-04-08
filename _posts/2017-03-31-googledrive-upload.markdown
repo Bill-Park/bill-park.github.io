@@ -24,7 +24,7 @@ img/ 같은 폴더를 이용하여 이미지 주소로 활용하는 방법도 �
 
 그러면 파일이 업로드됩니다.
 
-![drag-and-drop](https://drive.google.com/uc?id=0B_CtpwiAk5hIRDZFYlcySDQ4OE0)
+![]({{ site.img_url }}/googledrive_hosting/1.png)
 
 혹은 구글드라이브 PC용을 설치하여 업로드 할 수도 있습니다.
 
@@ -45,7 +45,7 @@ img/ 같은 폴더를 이용하여 이미지 주소로 활용하는 방법도 �
 
 사진의 주소를 얻기 위해서는 
 
-![get-image](https://goo.gl/vwxnFD)
+![]({{ site.img_url }}/googledrive_hosting/2.png)
 
 **파일-우클릭-공유 가능한 링크 가져오기** 를 클릭하면 됩니다.
 
@@ -76,7 +76,7 @@ $Jekyll Serve
 
 만약 주소가 제대로 되어있지 않는다면 아래와 같이 나옵니다.
 
-![crack-image](https://drive.google.com/uc?id=0B_CtpwiAk5hIcXlJdFRmY1FWbGs)
+![]({{ site.img_url }}/googledrive_hosting/3.png)
 
 이 경우 주소가 올바른지 확인해 주시기 바랍니다.
 

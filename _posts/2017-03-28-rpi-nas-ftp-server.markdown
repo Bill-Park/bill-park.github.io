@@ -79,12 +79,12 @@ ftp://pi@123.456.789.101:21 (포트입력 전 콜론 주의)
 
 를 입력해 주면 됩니다.
 
-![ftp_login](https://drive.google.com/uc?id=0B_CtpwiAk5hITXVLb09mME5WM1E)
+![]({{ site.img_url }}/rpi_nas/1.png)
 
 사용자 이름에는 유저이름(pi)
 비밀번호는 로그인 할 때의 비밀번호와 같습니다.(기본 raspberry)
 
-![ftp_login](https://drive.google.com/uc?id=0B_CtpwiAk5hIRDdQZ2NURTI3X3M)
+![]({{ site.img_url }}/rpi_nas/2.png)
 
 위와같은 화면이 나왔다면(pi의 HOME 디렉토리입니다.) 성공입니다.
 

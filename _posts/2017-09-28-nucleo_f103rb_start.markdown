@@ -24,31 +24,31 @@ STM32Cube MX는 핀의 기능 지정, 클럭 조정등 기본적인 환경을 GU
 
 ### STM32Cube
 
-![New Project](https://goo.gl/Qit4iH)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/1.png)
 
 New Project를 눌러 새 프로젝트를 생성합니다.
 
-![select_chip](https://goo.gl/hy8hDy)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/2.png)
 
 Part Number Search에 stm32f103rb를 검색합니다.
 
 Nucleo F1q03RB는 Package가 LQFP64칩이므로 아래것을 선택한 후 **Start Project**를 누릅니다.
 
-![pin_select](https://goo.gl/hPYxdK)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/3.png)
 
 왼쪽은 기능들의 상태를, 오른쪽에는 현재 핀의 상태를 나타냅니다.
 
 PA5번이 내장 LED(LD2)에 연결되어 있으므로 이를 **GPIO_Output** 모드로 설정해 줍니다.
 
-![pin_set](https://goo.gl/LDTVWK)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/4.png)
 
 핀이 설정될 경우 아래와 같이 초록색으로 바뀌면서 핀의 고유한 이름이 나옵니다.
 
-![pin_set_success](https://goo.gl/MWdkCK)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/5.png)
 
 **Configuration**을 눌러 설정 창으로 이동합니다.
 
-![configuration](https://goo.gl/4yXm6q)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/6.png)
 
 GPIO를 누르면 설정한 핀들이 나옵니다.
 
@@ -56,7 +56,7 @@ GPIO를 누르면 설정한 핀들이 나옵니다.
 
 저는 internal_led로 해주었습니다.
 
-![GPIO_set](https://goo.gl/2MxGSZ)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/7.png)
 
 Ok를 눌러 나온 후 Project-Generate Code를 클릭합니다.
 
@@ -64,21 +64,21 @@ Ok를 눌러 나온 후 Project-Generate Code를 클릭합니다.
 
 왼쪽 위의 톱니바퀴 모양을 눌러도 됩니다.
 
-![generate_code](https://goo.gl/g9LQvq)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/8.png)
 
 Project Name과 Project Location을 입력하고 Toolchain / IDE를 MDK-ARM V5로 설정합니다.
 
-![project_setting](https://goo.gl/kEHEBj)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/9.png)
 
 설정이 완료되었으면 **Ok**를 누릅니다.
 
 **Open Project**를 누릅니다.
 
-![open_project](https://goo.gl/wqKhv4)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/10.png)
 
 uVision5가 실행되면서 STM32Cube에서 설정한 내용이 코드로 변환되어 올라옵니다.
 
-![uvision_code](https://goo.gl/AJiWuQ)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/11.png)
 
 ### uVision5
 
@@ -109,7 +109,7 @@ while문으로 감싸져 있어 무한 반복하게 됩니다.
 
 아래와 같이 나오면 완료된 것입니다.
 
-![build_output](https://goo.gl/wtuNdw)
+![]({{ site.img_url }}/nucleo_f103rb/led_blink/12.png)
 
 보드의 검은색 버튼(RESET)을 눌러주면 초록색 LED가 0.5초 간격으로 점멸하는 것을 확인할 수 있습니다.
 

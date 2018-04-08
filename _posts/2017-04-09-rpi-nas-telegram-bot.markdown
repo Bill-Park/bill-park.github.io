@@ -62,7 +62,7 @@ $sudo apt-get install git
 
 clone이 완료되었다면 torrent_bot이라는 폴더가 생성되었을 것입니다.
 
-![clone_folder](https://drive.google.com/uc?id=0B_CtpwiAk5hIUS12MVAycTQta2M)
+![]({{ site.img_url }}/rpi_nas/12.png)
 
 소스코드는 python 코드로 되어있으며 이를 사용하기 위해서 모듈이 몇개 필요합니다.
 
@@ -82,7 +82,7 @@ $virtualenv torrent_bot
 
 그러면 torrent_bot 폴더 안에 bin폴더가 생성되었을 것입니다.
 
-![bin_folder](https://drive.google.com/uc?id=0B_CtpwiAk5hISFRWZ1poWDdVQW8)
+![]({{ site.img_url }}/rpi_nas/13.png)
 
 bin 폴더 안에있는 activate 파일을 실행시켜 줍니다.
 
@@ -92,7 +92,7 @@ $source bin/activate
 
 그러면 아래와 같이 pi@~~~ 앞에 (torrent_bot) 이라는 하얀 글자가 붙게됩니다.
 
-![run_virtualenv](https://drive.google.com/uc?id=0B_CtpwiAk5hIRWVtZXJ4dG9XOFE)
+![]({{ site.img_url }}/rpi_nas/14.png)
 
 ### 4. 관련 모듈 설치하기
 
@@ -102,7 +102,7 @@ python은 pip를 이용하여 모듈을 관리합니다.
 
 requirements.txt안에는 아래와 같이 모듈명과 버전이 적혀있습니다.
 
-![requirements](https://drive.google.com/uc?id=0B_CtpwiAk5hIWm1jWU5zU2k0RkE)
+![]({{ site.img_url }}/rpi_nas/15.png)
 
 pip를 이용하여 모듈들을 설치해 보도록 하겠습니다.
 
@@ -126,7 +126,7 @@ programs 폴더 안에 get_file.py라는 코드와 같이 있어야 합니다.
 
 또한 사용자별로 상이하여 직접 입력해 주어야 합니다.
 
-![login_data](https://drive.google.com/uc?id=0B_CtpwiAk5hISTYyN2NlaDhfUGs)
+![]({{ site.img_url }}/rpi_nas/16.png)
 ~~~
 user에는 이름(기본값은 pi)
 
@@ -139,7 +139,7 @@ token은 telegram-bot의 token값
 
 이제 파이썬(Python) 코드를 실행시켜 보도록 하겠습니다.
 
-![python](https://drive.google.com/uc?id=0B_CtpwiAk5hIZ0dMdTJvRTlZSUk)
+![]({{ site.img_url }}/rpi_nas/17.png)
 
 코드가 실행된 상태에서 파일을 업로드하면 파일명과 상태가 나옵니다.
 
@@ -147,15 +147,15 @@ token은 telegram-bot의 token값
 
 ## 1-2-3
 
-![1](https://drive.google.com/uc?id=0B_CtpwiAk5hIUVhMbWRsQnRBNVE){: width="30%" height="30%"}
-![2](https://drive.google.com/uc?id=0B_CtpwiAk5hIcGE2eTY2b0lOcDQ){: width="30%" height="30%"}
-![3](https://drive.google.com/uc?id=0B_CtpwiAk5hILVhRa1R0TUhwWFE){: width="30%" height="30%"}
+![]({{ site.img_url }}/rpi_nas/18.png){: width="30%" height="30%"}
+![]({{ site.img_url }}/rpi_nas/19.png){: width="30%" height="30%"}
+![]({{ site.img_url }}/rpi_nas/20.png){: width="30%" height="30%"}
 
 ## 4-5-6
 
-![4](https://drive.google.com/uc?id=0B_CtpwiAk5hIX19tX2tMbEFMRGs){: width="30%" height="30%"}
-![5](https://drive.google.com/uc?id=0B_CtpwiAk5hIUEZJYnRiNk1qMEk){: width="30%" height="30%"}
-![6](https://drive.google.com/uc?id=0B_CtpwiAk5hIQzNwZ3NZSGd2cW8){: width="30%" height="30%"}
+![]({{ site.img_url }}/rpi_nas/21.png){: width="30%" height="30%"}
+![]({{ site.img_url }}/rpi_nas/22.png){: width="30%" height="30%"}
+![]({{ site.img_url }}/rpi_nas/23.png){: width="30%" height="30%"}
 
 텔레그램 봇은 업데이트가 될수도 안될수도 있습니다.
 

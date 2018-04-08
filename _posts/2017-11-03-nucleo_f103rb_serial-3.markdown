@@ -16,7 +16,7 @@ HAL_UART_Transmit는 원하는 문자열을 보내기 위해서는 따로 메모
 
 이전 시간의 파일에서 File - Save Project As 혹은 Ctrl + A (다른이름으로 저장)를 눌러줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_3/0.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_3/0.png)
 
 그리고 코드를 생성(톱니바퀴)해 줍니다.
 
@@ -55,6 +55,6 @@ Serial 통신 프로그램을 실행하고 보드를 재시작합니다.
 
 
 
-![]({{ site.url }}/img/nucleo/serial_3/1.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_3/1.png)
 
 이상입니다.

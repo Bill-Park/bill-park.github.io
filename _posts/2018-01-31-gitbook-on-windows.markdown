@@ -28,7 +28,7 @@ NUCLEO F103RB 시리즈를 깃북으로 만들면서 여러 어려움이 있었�
 $ node -v
 ~~~
 
-![]({{ site.url }}/img/gitbook_on_window/1.png)
+![]({{ site.img_url }}/gitbook_on_window/1.png)
 
 깃북을 만들 폴더로 이동한 뒤 아래 명령어를 입력하여 깃북을 설치합니다.
 
@@ -36,7 +36,7 @@ $ node -v
 $ npm install gitbook-cli -g
 ~~~
 
-![]({{ site.url }}/img/gitbook_on_window/2.png)
+![]({{ site.img_url }}/gitbook_on_window/2.png)
 
 ### 2. Gitbook 만들기
 
@@ -46,7 +46,7 @@ Gitbook init을 실행하여 새로운 Gitbook을 만듭니다.
 $ gitbook init my_gitbook
 ~~~
 
-![]({{ site.url }}/img/gitbook_on_window/3.png)
+![]({{ site.img_url }}/gitbook_on_window/3.png)
 
 my_gitbook 폴더가 생성됩니다.
 
@@ -58,7 +58,7 @@ README.md는 표지이며 SUMMARY는 목차를 설정하는 파일입니다.
 
 마크다운 파일은 posts폴더에, 이미지 파일은 img 폴더에 넣어줍니다.
 
-![]({{ site.url }}/img/gitbook_on_window/4.png)
+![]({{ site.img_url }}/gitbook_on_window/4.png)
 
 이제 SUMMARY.md를 열고 목차를 수정해 줍니다.
 
@@ -107,7 +107,7 @@ git을 이용하므로 git 저장소로 만들어 줍니다.
 $ git init
 ~~~
 
-![]({{ site.url }}/img/gitbook_on_window/5.png)
+![]({{ site.img_url }}/gitbook_on_window/5.png)
 
 github에서 gitbook을 발행할 레포를 만들고 원격 저장소를 추가해 줍니다.
 
@@ -115,7 +115,7 @@ github에서 gitbook을 발행할 레포를 만들고 원격 저장소를 추가
 $ git remote add origin '저장소의 URL'
 ~~~
 
-![]({{ site.url }}/img/gitbook_on_window/6.png)
+![]({{ site.img_url }}/gitbook_on_window/6.png)
 
 github에서는 GitHub Pages를 2가지 방식을 설정할 수 있습니다.
 
@@ -151,25 +151,25 @@ git push -u origin master
 $ gitbook_publish.bat
 ~~~
 
-![]({{ site.url }}/img/gitbook_on_window/7.png)
+![]({{ site.img_url }}/gitbook_on_window/7.png)
 
 명령어들이 순차적으로 입력되면서 git push까지 완료됩니다.
 
 저장소로 가보면 아래와 같이 발행되어 있을 것입니다.
 
-![]({{ site.url }}/img/gitbook_on_window/9.png)
+![]({{ site.img_url }}/gitbook_on_window/9.png)
 
 GitHub Pages 설정을 위해 우측 상단에 표시된 Settings를 클릭합니다.
 
-![]({{ site.url }}/img/gitbook_on_window/10.png)
+![]({{ site.img_url }}/gitbook_on_window/10.png)
 
 표시된 부분을 **master branch / docs folder** 로 바꾸고 Save를 눌러줍니다.
 
-![]({{ site.url }}/img/gitbook_on_window/11.png)
+![]({{ site.img_url }}/gitbook_on_window/11.png)
 
 어느 주소로 publish 되었는지 나오며 링크를 클릭해서 들어가보면 GitBook이 나옵니다.
 
-![]({{ site.url }}/img/gitbook_on_window/12.png)
+![]({{ site.img_url }}/gitbook_on_window/12.png)
 
 이상으로 윈도우에서 GitHub Pages를 이용하여 GitBook 만들기를 마치겠습니다.
 

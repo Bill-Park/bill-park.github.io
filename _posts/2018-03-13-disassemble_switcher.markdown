@@ -20,7 +20,7 @@ categories: [making]
 
 저는 윗판을 먼저 열어주었습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6641.JPG)
+![]({{ site.img_url }}/switcher/1.JPG)
 
 여는 과정에서 고정핀이 부러질 수 있으므로 주의해서 열어줍니다.
 
@@ -28,23 +28,23 @@ categories: [making]
 
 볼트를 풀어주니 아랫판이 더 쉽게 열렸습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6643.JPG)
+![]({{ site.img_url }}/switcher/2.JPG)
 
 ㄱ자 모양으로 덮개가 안빠지도록 고정핀이 있습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6644.JPG)
+![]({{ site.img_url }}/switcher/3.JPG)
 
 밑판까지 다 열어주면 내부가 보입니다.
 
-![]({{ site.url }}/img/switcher/IMG_6646.JPG)
+![]({{ site.img_url }}/switcher/4.JPG)
 
 볼트를 다 풀고 고정프레임을 들어내자 pcb가 2개 보입니다.
 
-![]({{ site.url }}/img/switcher/IMG_6647.JPG)
+![]({{ site.img_url }}/switcher/5.JPG)
 
 하단 pcb 밑에는 배터리가 숨겨져 있습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6648.JPG)
+![]({{ site.img_url }}/switcher/6.JPG)
 
 왼쪽 하단에 보이는게 nRF51822라는 BLE 칩입니다.
 
@@ -54,61 +54,61 @@ categories: [making]
 
 상부 서보모터에 2개, 하부 서보모터에 2개를 사용합니다.
 
-![]({{ site.url }}/img/switcher/IMG_6651.JPG)
+![]({{ site.img_url }}/switcher/7.JPG)
 
 3.7V 750mAh 배터리를 사용하고 있습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6652.JPG)
+![]({{ site.img_url }}/switcher/8.JPG)
 
 대충 사이즈는 이정도 입니다.
 
-![]({{ site.url }}/img/switcher/IMG_6653.JPG)
+![]({{ site.img_url }}/switcher/9.JPG)
 
 본격적으로 모터를 뜯어보겠습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6655.JPG)
+![]({{ site.img_url }}/switcher/10.JPG)
 
 아래쪽 볼트 6개가 있는 커버를 뜯어보니 랙-피니언 세트가 나오네요.
 
 저기 랙(막대모양)이 스위치를 눌러 온/오프를 해줍니다.
 
-![]({{ site.url }}/img/switcher/IMG_6656.JPG)
+![]({{ site.img_url }}/switcher/11.JPG)
 
 기다란 볼트 4개를 뜯어보니 모터가 나왔습니다.
 
 서보모터를 분해해서 넣은듯 합니다.
 
-![]({{ site.url }}/img/switcher/IMG_6657.JPG)
+![]({{ site.img_url }}/switcher/12.JPG)
 
 한번 더 열어보면 기어박스가 나옵니다.
 
 그리스칠이 되어있네요.
 
-![]({{ site.url }}/img/switcher/IMG_6658.JPG)
+![]({{ site.img_url }}/switcher/13.JPG)
 
 다시 조립해 줍니다.
 
-![]({{ site.url }}/img/switcher/IMG_6660.JPG)
+![]({{ site.img_url }}/switcher/14.JPG)
 
 배터리에 붙어있던 양면테이프의 접착력이 낮아져서 3M 테이프를 발라주었습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6661.JPG)
+![]({{ site.img_url }}/switcher/15.JPG)
 
 pcb 뒤쪽에 있는 커넥터에 배터리를 끼워주고 잘 덮어줍니다.
 
-![]({{ site.url }}/img/switcher/IMG_6662.JPG)
+![]({{ site.img_url }}/switcher/16.JPG)
 
 pcb를 잘 덮어준 뒤
 
-![]({{ site.url }}/img/switcher/IMG_6663.JPG)
+![]({{ site.img_url }}/switcher/17.JPG)
 
 프레임을 끼우고 볼트로 고정해 줍니다.
 
-![]({{ site.url }}/img/switcher/IMG_6664.JPG)
+![]({{ site.img_url }}/switcher/18.JPG)
 
 하단 커버에 FRONT.COVER.3 이라고 적혀있습니다.
 
-![]({{ site.url }}/img/switcher/IMG_6665.JPG)
+![]({{ site.img_url }}/switcher/19.JPG)
 
 상단 커버에는 FRONT.COVER.2라고 적혀 있습니다.
 

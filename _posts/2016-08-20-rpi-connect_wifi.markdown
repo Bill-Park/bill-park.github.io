@@ -26,7 +26,7 @@ category: rpi
 
 이제 준비가 끝났으니 시작해 보겠습니다.
 
-![rpi_kit](https://www.dropbox.com/s/30rbxhing24d0sa/rpi_kit.jpg?dl=1){: width="40%" height="40%"}
+![]({{ site.img_url }}/rpi_connect_wifi/1.jpg){: width="40%" height="40%"}
 
 SSH로 접속하고 로그인 하는 과정은 생략하도록 하겠습니다.  
 ## **1. 업데이트 & 업그레이드**
@@ -220,7 +220,7 @@ $sudo reboot
 ~~~
 이까지 되었다면 라즈베리파이를 ap mode로 사용할 수 있습니다.
 
-![wifi](https://www.dropbox.com/s/nvqa3lwdsvcfxwc/wifi.png?dl=1){: width="40%" height="40%"}
+![]({{ site.img_url }}/rpi_connect_wifi/2.png){: width="40%" height="40%"}
 
 ### **8. 추가사항(필수)**
 이대로 진행해보니 에러가 하나 발생하였습니다.

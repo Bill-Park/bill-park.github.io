@@ -42,13 +42,13 @@ category: making
 
 아크릴 크기에 맞춰 필름을 잘라줍니다.
 
-![film_1](https://goo.gl/NdpMJ1)
+![]({{ site.img_url }}/smart_mirror/half_mirror/1.JPG)
 
 처음에 너무 작게잘라서 실패했습니다.
 
 위 사진보다는 충분히 크게, 2번째와 같이 5~6cm 이상 튀어나오도록 잘라줍니다.
 
-![film_2](https://goo.gl/oFrZ27)
+![]({{ site.img_url }}/smart_mirror/half_mirror/2.JPG)
 
 아크릴에는 필름이 앞뒤로 있습니다.
 
@@ -56,7 +56,7 @@ category: making
 
 바닥의 먼지가 붙거나 긁혀 아크릴에 손상이 갈 수 있기 때문입니다.
 
-![no_film_1](https://goo.gl/7y5Sbn)
+![]({{ site.img_url }}/smart_mirror/half_mirror/3.JPG)
 
 필름을 떼어낸 면에 퐁퐁물(저는 주방세제를 사용했습니다.)을 뿌려줍니다.
 
@@ -64,7 +64,7 @@ category: making
 
 반드시 먼지는 최소화해주세요
 
-![pongpong_1](https://goo.gl/a9KQVv)
+![]({{ site.img_url }}/smart_mirror/half_mirror/4.JPG)
 
 분무기로 적당히 뿌린 뒤 하프미러필름을 준비합니다.
 
@@ -72,55 +72,55 @@ category: making
 
 투명테이프나 유리테이프같은걸 작게 잘라와서 필름면에 붙인 후 테이프를 살짝 들면 됩니다.
 
-![tape_1](https://goo.gl/boU7dj)
+![]({{ site.img_url }}/smart_mirror/half_mirror/5.JPG)
 
 하프미러필름을 덮고있던 커버 필름이 떨어집니다.
 
-![tape_2](https://goo.gl/rPxDiZ)
+![]({{ site.img_url }}/smart_mirror/half_mirror/6.JPG)
 
 하프미러필름을 퐁퐁물이 뿌려진 아크릴에 올리고 밀대로 밀어줍니다.
 
-![push_stick_1](https://goo.gl/fGq8YU)
+![]({{ site.img_url }}/smart_mirror/half_mirror/7.JPG)
 
 쭉쭉 밀어줍니다.
 
-![pushed_1](https://goo.gl/KqXfOl)
+![]({{ site.img_url }}/smart_mirror/half_mirror/8.JPG)
 
 중간에 먼지가 붙었나봅니다.
 
 이렇게 볼록 튀어나옵니다.
 
-![dust_1](https://goo.gl/QJMEXS)
+![]({{ site.img_url }}/smart_mirror/half_mirror/9.JPG)
 
 망했습니다...
 
 그래서 여분으로 산 아크릴을 꺼냅니다.
 
-![acryl_2](https://goo.gl/DF8wdW)
+![]({{ site.img_url }}/smart_mirror/half_mirror/10.JPG)
 
 한쪽 필름을 떼어낸 뒤(살짝 반사되는게 보이시나요?)
 
-![no_film_2](https://goo.gl/tdnJSn)
+![]({{ site.img_url }}/smart_mirror/half_mirror/11.JPG)
 
 푼무기로 촥촥 해준 뒤(충분히 뿌려주세요.)
 
-![pongpong_2](https://goo.gl/uJJQcO)
+![]({{ site.img_url }}/smart_mirror/half_mirror/12.JPG)
 
 하프미러필름을 살짝 얹어준 후
 
-![film_3](https://goo.gl/WFp7tp)
+![]({{ site.img_url }}/smart_mirror/half_mirror/13.JPG)
 
 옆으로 쫙 당겨서 펴줍니다.
 
-![film_4](https://goo.gl/u5sxYX)
+![]({{ site.img_url }}/smart_mirror/half_mirror/14.JPG)
 
 쭉쭉 밀어준 뒤
 
-![film_5](https://goo.gl/nx3cHl)
+![]({{ site.img_url }}/smart_mirror/half_mirror/15.JPG)
 
 기포들을 빼줍니다.
 
-![film_6](https://goo.gl/x8BRZZ)
+![]({{ site.img_url }}/smart_mirror/half_mirror/16.JPG)
 
 여기서 빠진부분이 하나 있는데 삐져나온 부분을 잘라내 주어야 합니다.
 
@@ -132,12 +132,12 @@ category: making
 
 처음 만든것과 두번째 만든것을 나란히 놓아보았습니다.
 
-![two_acryl](https://goo.gl/C30cQn)
+![]({{ site.img_url }}/smart_mirror/half_mirror/17.JPG)
 
 실제 거울과 비교해보았습니다.
 
 살짝 뿌옇게 보이긴 하네요.
 
-![compare](https://goo.gl/nvWvEn)
+![]({{ site.img_url }}/smart_mirror/half_mirror/18.JPG)
 
 

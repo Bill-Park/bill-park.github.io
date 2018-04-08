@@ -32,12 +32,12 @@ BotFather과 대화로 bot을 생성하고 여러 기능을 설정할 수 있습
 
 대화상대에서 BotFather를 검색하여 추가해 줍니다.
 
-![1](https://drive.google.com/uc?id=0B_CtpwiAk5hIZHA0ZFhEZUhzSTA)
+![]({{ site.img_url }}/telegram/1.jpg)
 
 ~~~
 /start
 ~~~
-![2](https://drive.google.com/uc?id=0B_CtpwiAk5hIejZ1NGdTOWRXVWM)
+![]({{ site.img_url }}/telegram/2.jpg)
 
 라는 메세지를 보내면 시작할 수 있습니다. 여러가지 설명이 나오며 bot을 먼저 만들어야 하기에
 ~~~
@@ -53,7 +53,7 @@ BotFather과 대화로 bot을 생성하고 여러 기능을 설정할 수 있습
 
 그러면 username을 지어달라고 합니다. 이는 아이디입니다.
 
-![3](https://drive.google.com/uc?id=0B_CtpwiAk5hIQWhrWElqZnBybnc)
+![]({{ site.img_url }}/telegram/3.jpg)
 
 아이콘 바로 옆에있는 bill_bot이 봇의 이름, 아이디에 있는 @로 시작하는 부분이 username입니다.  
 
@@ -63,7 +63,7 @@ BotFather과 대화로 bot을 생성하고 여러 기능을 설정할 수 있습
 
 (user name 짓는 부분에서 중복되면서 약간의 편집이 있었습니다. 그림판 죄송합니다 ㅠㅠ)
 
-![4](https://drive.google.com/uc?id=0B_CtpwiAk5hIN3JaSUJBT0g0M0E)
+![]({{ site.img_url }}/telegram/4.jpg)
 
 마지막에 검은색 박스로 쳐진 부분이 있습니다. 
 
@@ -175,7 +175,7 @@ bot.sendMessage(chat_id = chat_id, text="저는 봇입니다.")
 ~~~
 그러면 bot이 메세지를 보낸 것을 확인할 수 있습니다.
 
-![5](https://drive.google.com/uc?id=0B_CtpwiAk5hIOTU1Vk5BUURNY0U)
+![]({{ site.img_url }}/telegram/5.jpg)
 
 이상으로 python에서 telegram bot 만들기를 마치도록 하겠습니다.
 

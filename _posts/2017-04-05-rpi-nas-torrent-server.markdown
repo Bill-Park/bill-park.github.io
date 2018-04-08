@@ -26,7 +26,7 @@ USB가 어디에 연결되어 있는지 확인합니다.
 $sudo fdisk -l
 ~~~
 
-![fdisk](https://drive.google.com/uc?id=0B_CtpwiAk5hIRVBRSHktUHIwUW8)
+![]({{ site.img_url }}/rpi_nas/3.png)
 
 /dev/sdx1의 형태입니다.
 
@@ -51,7 +51,7 @@ $sudo mount -t ntfs -o uid=pi,gid=pi /dev/sda1 /mnt/usb1 #마운트합니다.
 
 uid와 gid는 마운트 한 폴더의 소유자, 소유그룹을 의미합니다.
 
-![mount_error](https://drive.google.com/uc?id=0B_CtpwiAk5hIWnhzeHRza0kySlE)
+![]({{ site.img_url }}/rpi_nas/4.png)
 
 그러면 위와같이 에러가 발생합니다.
 
@@ -64,7 +64,7 @@ $sudo nano /etc/fstab
 를 적어줍니다. (띄워쓰기 칸 수는 상관없습니다.)
 ~~~
 
-![usb_mount](https://drive.google.com/uc?id=0B_CtpwiAk5hIOEp5ZWIwWHVUNG8)
+![]({{ site.img_url }}/rpi_nas/5.png)
 
 저장한 뒤 재부팅을 해줍니다.
 nano에서 저장은 ctrl+x, y를 입력하면 됩니다.
@@ -75,7 +75,7 @@ $sudo reboot
 
 mnt로 이동하여 마운트가 잘 되었는지 확인해 줍니다.
 
-![mounted](https://drive.google.com/uc?id=0B_CtpwiAk5hIY0NCVHBNQWNacVk)
+![]({{ site.img_url }}/rpi_nas/6.png)
 
 초록색으로 하이라이트, 그리고 소유자와 그룹이 pi면 잘 된것입니다.
 
@@ -148,25 +148,25 @@ $sudo service transmission-daemon reload
 123.456.789.111:9091
 ~~~
 
-![rpc_login](https://drive.google.com/uc?id=0B_CtpwiAk5hIcjdhZnk1QjFQS28)
+![]({{ site.img_url }}/rpi_nas/7.png)
 
 사용자 이름에는 rpc-username을, 비밀번호에는 rpc-password의 값을 입력합니다.
 
-![rpc-login-com](https://drive.google.com/uc?id=0B_CtpwiAk5hIWWpMVXNtSnpoaTA)
+![]({{ site.img_url }}/rpi_nas/8.png)
 
 왼쪽 상단의 서류파일 모양(빨간색 네모)을 클릭하면 토렌트파일을 업로드 할 수 있습니다.
 
 시험용으로 만든 토렌트파일을 업로드 해 보겠습니다.
 
-![torrent_add](https://drive.google.com/uc?id=0B_CtpwiAk5hIZGZmcVZ3SWxBQUU)
+![]({{ site.img_url }}/rpi_nas/9.png)
 
 다운로드가 완료되었습니다.
 
-![torrent_end](https://drive.google.com/uc?id=0B_CtpwiAk5hIQ0I5MlhBVUN6a1U)
+![]({{ site.img_url }}/rpi_nas/10.png)
 
 다운로드가 잘 되었는지 확인해 줍니다.
 
-![torrent_test](https://drive.google.com/uc?id=0B_CtpwiAk5hIYWZwVDdDZ1JxZjA)
+![]({{ site.img_url }}/rpi_nas/11.png)
 
 테스트에 사용한 토렌트파일은 아래 링크에서 다운받을 수 있습니다.
 

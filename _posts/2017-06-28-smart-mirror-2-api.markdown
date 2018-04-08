@@ -12,23 +12,23 @@ category: making
 
 [www.data.go.kr](https://www.data.go.kr/)에 접속합니다.
 
-![0](https://goo.gl/MKyoaL)
+![]({{ site.img_url }}/smart_mirror/weather_api/1.png)
 
 아이디가 없다면 회원가입을, 있다면 로그인을 해줍니다.
 
 가운데 검색창에 **동네예보**를 입력합니다.
 
-![1](https://goo.gl/p83NNT)
+![]({{ site.img_url }}/smart_mirror/weather_api/2.png)
 
 나오는 목록중 **오픈API**에 있는 **동네예보정보조회서비스**를 클릭합니다.
 
-![2](https://goo.gl/V3b7q3)
+![]({{ site.img_url }}/smart_mirror/weather_api/3.png)
 
 API 사용신청을 해야합니다.
 
 저는 일반 - 참고자료를 선택했습니다.
 
-![3](https://goo.gl/KPDHBw)
+![]({{ site.img_url }}/smart_mirror/weather_api/4.png)
 
 어떤 기능의 API를 사용할 것인지 선택해 줍니다.
 
@@ -36,27 +36,27 @@ API 사용신청을 해야합니다.
 
 그리고 맨 밑 **동의합니다**에 체크해 줍니다.
 
-![4](https://goo.gl/hpMcc5)
+![]({{ site.img_url }}/smart_mirror/weather_api/5.png)
 
 **신청**를 눌러주면 완료됩니다.
 
-![5](https://goo.gl/oMD25m)
+![]({{ site.img_url }}/smart_mirror/weather_api/6.png)
 
 우측 위의 **마이페이지**를 누르면 신청한 목록을 볼 수 있습니다.
 
 승인된 **동네예보정보조회서비스**를 클릭하여 들어갑니다.
 
-![6](https://goo.gl/GfNzaE)
+![]({{ site.img_url }}/smart_mirror/weather_api/7.png)
 
 **일반 인증키 받기**를 클릭하여 인증키를 신청합니다.
 
-![7](https://goo.gl/4xrzRa)
+![]({{ site.img_url }}/smart_mirror/weather_api/8.png)
 
 받은 인증키는 최장 1시간 뒤 사용이 가능합니다. 조금만 기다려 주세요.
 
 (인증키 목록이 기상청서버로 1시간마다 전송된다고 합니다.)
 
-![8](https://goo.gl/ag5sCA)
+![]({{ site.img_url }}/smart_mirror/weather_api/9.png)
 
 스크롤을 밑으로 내려 테스트를 해봅니다.
 
@@ -78,13 +78,13 @@ pageNo : 페이지 번호입니다.
 
 _type : 받는 값입니다. 기본은 xml이나 json이 조금 더 편해서 json으로 받습니다.
 
-![9](https://goo.gl/SwX7h8)
+![]({{ site.img_url }}/smart_mirror/weather_api/10.png)
 
 칸을 다 채운 뒤 미리보기를 클릭하면
 
 요청한 api에 대해 응답이 옵니다.
 
-![10](https://goo.gl/NNcXZs)
+![]({{ site.img_url }}/smart_mirror/weather_api/11.png)
 
 이 과정을 python에서 진행해주어야 합니다.
 
@@ -193,7 +193,7 @@ YYYYmmdd, tt+00 형태로 반환됩니다.
 
 파싱되지 않은 데이터를 넣으면 좀 더 보기 편하게 해줍니다.
 
-![11](https://goo.gl/HfUPJd)
+![]({{ site.img_url }}/smart_mirror/weather_api/12.png)
 
 난잡하던 데이터가 정리가 됬습니다.
 

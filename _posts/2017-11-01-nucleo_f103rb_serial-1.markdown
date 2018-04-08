@@ -12,17 +12,17 @@ nucleo f103rb에는 USART통신을 최대 3채널까지 사용할 수 있습니�
 
 USART2의 Mode를 Asynchronous로 설정해 줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_1/1.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_1/1.png)
 
 Configuration에서 USART2를 눌러 설정창으로 들어갑니다.
 
 Parameter Settings에서 Baud Rate를 9600으로 바꿔줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_1/3.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_1/3.png)
 
 NVIC Settings에서 global interrupt를 Enabled 해줍니다.
 
-![]({{ site.url }}/img/nucleo/serial_1/4.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_1/4.png)
 
 이제 코드를 생성(톱니바퀴)해 줍니다.
 
@@ -60,12 +60,12 @@ USER CODE BIGIN 3 에는 아래와 같이 추가해 줍니다.
 
 RESET 버튼을 눌러 보드를 재시작하면 Hello! 문자가 나옵니다.
 
-![]({{ site.url }}/img/nucleo/serial_1/5.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_1/5.png)
 
 여기에 문자열을 보내면 보낸 그대로 돌아옵니다.
 
-![]({{ site.url }}/img/nucleo/serial_1/6.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_1/6.png)
 
-![]({{ site.url }}/img/nucleo/serial_1/7.png)
+![]({{ site.img_url }}/nucleo_f103rb/serial_1/7.png)
 
 이상입니다.

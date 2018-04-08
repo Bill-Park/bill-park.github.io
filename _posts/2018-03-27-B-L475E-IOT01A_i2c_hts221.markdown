@@ -18,25 +18,25 @@ $53의 저렴한 가격으로 여러 가지 센서부터 무선 통신까지 사
 
 STM32L475BGTx로 프로젝트를 만들어 줍니다.
 
-![]({{ site.url }}/img/l475e/i2c/1.png)
+![]({{ site.img_url }}/l475e/i2c/1.png)
 
 PA7번을 USART1_RX, PA6번을 USART1_TX로, USART1번을 Asynchronous로 설정해줍니다.
 
-![]({{ site.url }}/img/l475e/i2c/2.png)
+![]({{ site.img_url }}/l475e/i2c/2.png)
 
 PB10번을 I2C2_SCL, PB11번을 I2C2_SDA로, I2C2를 I2C로 설정해 줍니다.
 
-![]({{ site.url }}/img/l475e/i2c/3.png)
+![]({{ site.img_url }}/l475e/i2c/3.png)
 
 Configuration - USART1에서 Baud Rate를 9600으로, Word Length를 8bits로 설정해 줍니다.
 
 이는 Serial 통신 설정에 맞춰주면 됩니다.
 
-![]({{ site.url }}/img/l475e/i2c/4.png)
+![]({{ site.img_url }}/l475e/i2c/4.png)
 
 NVIC Settings로 이동하여 USART1 global interrupt의 Enabled에 체크해 줍니다.
 
-![]({{ site.url }}/img/l475e/i2c/5.png)
+![]({{ site.img_url }}/l475e/i2c/5.png)
 
 I2C쪽은 따로 설정해줄 것이 없으므로 넘어갑니다.
 
@@ -190,7 +190,7 @@ T0_degC(T0c), T1_degC(T1c), T0_out(T0o), T1_out(T1o) 값이 있습니다.
 
 0x35번 register에는 T0_degC의 9, 10번째 값, T1_degC의 9, 10번째 값이 들어있습니다.
 
-![]({{ site.url }}/img/l475e/i2c/6.png)
+![]({{ site.img_url }}/l475e/i2c/6.png)
 
 위 그래프를 참조하여 O2C 값을 찾습니다. O2C는 output 값을 섭씨로 바꾸는데 사용됩니다.
 
@@ -232,10 +232,10 @@ while문을 이용하여 무한반복합니다.
 
 통신 프로그램을 이용하여 확인해보면 아래와 같이 나옵니다.
 
-![]({{ site.url }}/img/l475e/i2c/7.png)
+![]({{ site.img_url }}/l475e/i2c/7.png)
 
 손으로 눌러 온도를 조금 올려보았습니다.
 
-![]({{ site.url }}/img/l475e/i2c/8.png)
+![]({{ site.img_url }}/l475e/i2c/8.png)
 
 이상입니다.

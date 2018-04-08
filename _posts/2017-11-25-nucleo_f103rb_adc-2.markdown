@@ -14,17 +14,17 @@ CPU를 거치지 않기때문에 이론상 훨신 빠른 속도로 값을 가져
 
 지난 시간과 같습니다.
 
-![]({{ site.url }}/img/nucleo/adc/circuit.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc/circuit.png)
 
 ### STM32Cube
 
 이전 시간의 파일에서 File - Save Project As 혹은 Ctrl + A (다른이름으로 저장)를 눌러줍니다.
 
-![]({{ site.url }}/img/nucleo/adc_dma/0.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc_dma/0.png)
 
 Configuration 탭으로 이동하여 DMA를 클릭합니다.
 
-![]({{ site.url }}/img/nucleo/adc_dma/1.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc_dma/1.png)
 
 1. Add를 클릭하여 DMA Request를 추가하고
 
@@ -32,7 +32,7 @@ Configuration 탭으로 이동하여 DMA를 클릭합니다.
 
 3. Data Width를 Word로 맞춰준 뒤 Ok를 눌러줍니다.
 
-![]({{ site.url }}/img/nucleo/adc_dma/2.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc_dma/2.png)
 
 
 
@@ -78,6 +78,6 @@ USER CODE BEGIN 3 안에 DMA를 이용하여 ADC 값을 받아오고 출력하�
 
 Serial 통신 프로그램을 실행하고 보드를 재시작합니다.
 
-![]({{ site.url }}/img/nucleo/adc_dma/3.png)
+![]({{ site.img_url }}/nucleo_f103rb/adc_dma/3.png)
 
 이상입니다.

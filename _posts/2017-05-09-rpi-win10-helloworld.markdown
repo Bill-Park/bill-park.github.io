@@ -38,17 +38,17 @@ windows 10은 creator 업데이트가 필요하며 이는 아래 링크에서 �
 
 micro sd를 연결한 뒤(포멧은 자동으로 됩니다.) Dashboard를 아래와 같이 설정해 줍니다.
 
-![iso_install](https://goo.gl/RJsxTf)
+![]({{ site.img_url }}/win10_iot/1.png)
 
 계속을 눌러 micro sd카드를 포멧해 줍니다.
 
-![sd_format](https://goo.gl/y3ph2O)
+![]({{ site.img_url }}/win10_iot/2.png)
 
 포멧후 자동으로 sd카드에 win 10 iot가 올라가니 잠깐 기다려 줍니다.
 
 완료되면 아래와 같이 나옵니다.
 
-![sd_ready](https://goo.gl/DVMVCw)
+![]({{ site.img_url }}/win10_iot/3.png)
 
 ### 2. Visual Studio 2017 설정하기
 
@@ -72,27 +72,27 @@ exe파일을 실행하여 설치를 진행해 줍니다.
 
 워크로드에서 체크된 부분을 설치해 줍니다.(총 3개)
 
-![workload_1](https://goo.gl/jlkb3j)
+![]({{ site.img_url }}/win10_iot/4.png)
 
-![workload_2](https://goo.gl/7Aak7Q)
+![]({{ site.img_url }}/win10_iot/5.png)
 
 개별 구성 요소에서 추가적으로 2가지를 체크해 줍니다.
 
 체크 후 수정을 누르면 설치가 진행됩니다.
 
-![each](https://goo.gl/CHWOXv)
+![]({{ site.img_url }}/win10_iot/6.png)
 
 설치가 완료되면 Visual Studio를 실행해 줍니다.
 
-![new](https://goo.gl/BVi31R)
+![]({{ site.img_url }}/win10_iot/7.png)
 
 **파일 - 새로 만들기 - 프로젝트**를 눌러 새 프로젝트를 생성합니다.
 
-![universial](https://goo.gl/74bJQm)
+![]({{ site.img_url }}/win10_iot/8.png)
 
 버전은 크게 신경쓰지 않으셔도 됩니다.
 
-![version](https://goo.gl/JcdSYk)
+![]({{ site.img_url }}/win10_iot/9.png)
 
 ### 3. Visual Studio를 사용하여 앱 올리기
 
@@ -102,27 +102,27 @@ UI를 꾸밀 수 있는 곳입니다.
 
 버튼을 하나 끌어다 놓은 뒤 Content 의 값을 Hello World!로 변경해 줍니다.
 
-![button](https://goo.gl/0jAPGz)
+![]({{ site.img_url }}/win10_iot/10.png)
 
 솔루션~~ 바로 밑에있는 App6(프로젝트 명)을 우클릭한 뒤 속성을 클릭합니다.
 
-![properties](https://goo.gl/n1lxCx)
+![]({{ site.img_url }}/win10_iot/11.png)
 
 **컴퓨터 이름**이라 되어있는 부분에 라즈베리파이의 ip주소를 적어줍니다.
 
-![computer_name](https://goo.gl/bgRaJs)
+![]({{ site.img_url }}/win10_iot/12.png)
 
 위쪽 탭에서 초록색 화살표 옆의 로컬 컴퓨터(혹은 Device)의 Dropdown 메뉴에서 원격컴퓨터를 클릭합니다.
 
-![remote_computer](https://goo.gl/m0jwJX)
+![]({{ site.img_url }}/win10_iot/13.png)
 
 그리고 초록색 버튼을 눌러 실행하면 잠시 뒤(시간이 조금 걸립니다.) 화면이 아래와 같이 바뀌게 됩니다.
 
-![debug](https://goo.gl/mGyDwW)
+![]({{ site.img_url }}/win10_iot/14.png)
 
 라즈베리파이와 연결된 화면을 보면 아래와 같이 나오게 됩니다.
 
-![Hello_World!](https://goo.gl/uoK8Be)
+![]({{ site.img_url }}/win10_iot/15.png)
 
 중단하기 위해서는 초록색 화살표 옆에 있는 빨간 네모(정지버튼)를 누르면 됩니다.
 
