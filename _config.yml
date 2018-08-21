@@ -15,6 +15,6 @@ github_username:  Bill-Park
 paginate: 5
 img_url: "https://d2k4c07bmdw2ki.cloudfront.net"
 
-gems: [jekyll-paginate, kramdown]
+plugins: [jekyll-paginate, kramdown]
 # Build settings
 markdown: kramdown
