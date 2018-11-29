@@ -25,7 +25,7 @@ $sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudiol9-d
 
 사운드 관련 라이브러리를 설치해 줍니다.
 
-마지막의 portaudiol9-dev의 l은 **알파벳 L** 입니다.
+마지막의 portaudio19-dev의 1은 **숫자 1** 입니다.
 
 ![]({{ site.img_url }}/kt_voice_kit/3_example/2.png)
 
