@@ -7,3 +7,7 @@ _site
 # *.jpg
 # *.png
 img/
+
+.DS_Store
+
+.jekyll-cache/
