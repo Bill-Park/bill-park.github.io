@@ -22,6 +22,10 @@ categories: [coding]
 
 간단한 메세지 응답 챗봇을 만들어 보도록 하겠습니다.
 
+**V13에서부터 bot handler 방식이 변경되었습니다.**
+
+**기존 bot, update에서 update, context로 변경되었으니 착오 없으시길 바랍니다.**
+
 ### 1. 메세지 응답하기
 
 ~~~
@@ -32,12 +36,12 @@ my_token = ''
 print('start telegram chat bot')
 
 # message reply function
-def get_message(bot, update) :
+def get_message(update, context):
     update.message.reply_text("got text")
     update.message.reply_text(update.message.text)
-    
 
-updater = Updater(my_token)
+
+updater = Updater(my_token, use_context=True)
 
 message_handler = MessageHandler(Filters.text, get_message)
 updater.dispatcher.add_handler(message_handler)
@@ -90,17 +94,17 @@ print('start telegram chat bot')
 
 
 # message reply function
-def get_message(bot, update) :
+def get_message(update, context) :
     update.message.reply_text("got text")
     update.message.reply_text(update.message.text)
 
 
 # help reply function
-def help_command(bot, update) :
+def help_command(update, context) :
     update.message.reply_text("무엇을 도와드릴까요?")
 
 
-updater = Updater(my_token)
+updater = Updater(my_token, use_context=True)
 
 message_handler = MessageHandler(Filters.text, get_message)
 updater.dispatcher.add_handler(message_handler)
@@ -137,26 +141,26 @@ dir_now = os.path.dirname(os.path.abspath(__file__))  # real path to dirname
 
 
 # message reply function
-def get_message(bot, update) :
+def get_message(update, context) :
     update.message.reply_text("got text")
     update.message.reply_text(update.message.text)
 
 
 # help reply function
-def help_command(bot, update) :
+def help_command(update, context) :
     update.message.reply_text("무엇을 도와드릴까요?")
 
 
 # photo reply function
-def get_photo(bot, update) :
+def get_photo(update, context) :
     file_path = os.path.join(dir_now, 'from_telegram.png')
     photo_id = update.message.photo[-1].file_id  # photo 번호가 높을수록 화질이 좋음
-    photo_file = bot.getFile(photo_id)
+    photo_file = context.bot.getFile(photo_id)
     photo_file.download(file_path)
     update.message.reply_text('photo saved')
 
 
-updater = Updater(my_token)
+updater = Updater(my_token, use_context=True)
 
 message_handler = MessageHandler(Filters.text, get_message)
 updater.dispatcher.add_handler(message_handler)
@@ -207,36 +211,36 @@ dir_now = os.path.dirname(os.path.abspath(__file__))  # real path to dirname
 
 
 # message reply function
-def get_message(bot, update) :
+def get_message(update, context) :
     update.message.reply_text("got text")
     update.message.reply_text(update.message.text)
 
 
 # help reply function
-def help_command(bot, update) :
+def help_command(update, context) :
     update.message.reply_text("무엇을 도와드릴까요?")
 
 
 # photo reply function
-def get_photo(bot, update) :
+def get_photo(update, context) :
     print("get photo")
     print(update.message)
     file_path = os.path.join(dir_now, 'from_telegram.png')
     photo_id = update.message.photo[-1].file_id  # photo 번호가 높을수록 화질이 좋음
-    photo_file = bot.getFile(photo_id)
+    photo_file = context.bot.getFile(photo_id)
     photo_file.download(file_path)
     update.message.reply_text('photo saved')
 
 
 # file reply function
-def get_file(bot, update) :
+def get_file(update, context) :
     file_id_short = update.message.document.file_id
     file_url = os.path.join(dir_now, update.message.document.file_name)
-    bot.getFile(file_id_short).download(file_url)
+    context.bot.getFile(file_id_short).download(file_url)
     update.message.reply_text('file saved')
 
 
-updater = Updater(my_token)
+updater = Updater(my_token, use_context=True)
 
 message_handler = MessageHandler(Filters.text, get_message)
 updater.dispatcher.add_handler(message_handler)
