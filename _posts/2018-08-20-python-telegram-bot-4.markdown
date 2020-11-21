@@ -28,7 +28,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 my_token = 'token'
 
-updater = Updater(my_token)
+updater = Updater(my_token, use_context=True)
 
 def build_menu(buttons, n_cols, header_buttons=None, footer_buttons=None):
     menu = [buttons[i:i + n_cols] for i in range(0, len(buttons), n_cols)]
@@ -38,7 +38,7 @@ def build_menu(buttons, n_cols, header_buttons=None, footer_buttons=None):
         menu.append(footer_buttons)
     return menu
 
-def get_command(bot, update):
+def get_command(update, context):
     print("get")
     show_list = []
     show_list.append(InlineKeyboardButton("on", callback_data="on")) # add on button
@@ -66,7 +66,7 @@ Inline Keyboard만 있을 경우 버튼을 눌러도 아무런 응답이 없습�
 응답을 위해 callback 추가해 주어야 합니다.
 
 ~~~
-def get_command(bot, update):
+def get_command(update, context) :
     print("get")
     show_list = []
     show_list.append(InlineKeyboardButton("on", callback_data="on")) # add on button
@@ -76,10 +76,11 @@ def get_command(bot, update):
 
     update.message.reply_text("원하는 값을 선택하세요", reply_markup=show_markup)
 
-def callback_get(bot, update):
+def callback_get(update, context):
     print("callback")
-    bot.edit_message_text(text="{}이(가) 선택되었습니다".format(update.callback_query.data),
-                              chat_id=update.callback_query.message.chat_id, message_id=update.callback_query.message.message_id)
+    context.bot.edit_message_text(text="{}이(가) 선택되었습니다".format(update.callback_query.data),
+                                  chat_id=update.callback_query.message.chat_id,
+                                  message_id=update.callback_query.message.message_id)
     
 get_handler = CommandHandler('get', get_command)
 updater.dispatcher.add_handler(get_handler)
@@ -116,27 +117,29 @@ def build_button(text_list, callback_header = "") : # make button list
 
     return button_list
 
-def get_command(bot, update):
+
+def get_command(update, context) :
     print("get")
     button_list = build_button(["on", "off", "cancel"]) # make button list
     show_markup = InlineKeyboardMarkup(build_menu(button_list, len(button_list) - 1)) # make markup
     update.message.reply_text("원하는 값을 선택하세요", reply_markup=show_markup) # reply text with markup
 
-def callback_get(bot, update):
+
+def callback_get(update, context) :
     data_selected = update.callback_query.data
     print("callback : ", data_selected)
     if len(data_selected.split(",")) == 1 :
         button_list = build_button(["1", "2", "3", "cancel"], data_selected)
         show_markup = InlineKeyboardMarkup(build_menu(button_list, len(button_list) - 1))
-        bot.edit_message_text(text="상태를 선택해 주세요.",
-                              chat_id=update.callback_query.message.chat_id,
-                              message_id=update.callback_query.message.message_id,
-                              reply_markup=show_markup)
+        context.bot.edit_message_text(text="상태를 선택해 주세요.",
+                                      chat_id=update.callback_query.message.chat_id,
+                                      message_id=update.callback_query.message.message_id,
+                                      reply_markup=show_markup)
 
     elif len(data_selected.split(",")) == 2 :
-        bot.edit_message_text(text="{}이(가) 선택되었습니다".format(update.callback_query.data),
-                              chat_id=update.callback_query.message.chat_id,
-                              message_id=update.callback_query.message.message_id)
+        context.bot.edit_message_text(text="{}이(가) 선택되었습니다".format(update.callback_query.data),
+                                      chat_id=update.callback_query.message.chat_id,
+                                      message_id=update.callback_query.message.message_id)
 ~~~
 
 선택한 값이 누적되어 나오는 것을 볼 수 있습니다.
@@ -150,27 +153,27 @@ cancel 버튼은 계속 있었지만 cancel처럼 동작하지 않았습니다.
 cancel을 cancel답게 해보겠습니다.
 
 ~~~
-def callback_get(bot, update):
+def callback_get(update, context) :
     data_selected = update.callback_query.data
     print("callback : ", data_selected)
     if data_selected.find("cancel") != -1 :
-        bot.edit_message_text(text="취소하였습니다.",
-                              chat_id=update.callback_query.message.chat_id,
-                              message_id=update.callback_query.message.message_id)
+        context.bot.edit_message_text(text="취소하였습니다.",
+                                      chat_id=update.callback_query.message.chat_id,
+                                      message_id=update.callback_query.message.message_id)
         return
 
     if len(data_selected.split(",")) == 1 :
         button_list = build_button(["1", "2", "3", "cancel"], data_selected)
         show_markup = InlineKeyboardMarkup(build_menu(button_list, len(button_list) - 1))
-        bot.edit_message_text(text="상태를 선택해 주세요.",
-                              chat_id=update.callback_query.message.chat_id,
-                              message_id=update.callback_query.message.message_id,
-                              reply_markup=show_markup)
+        context.bot.edit_message_text(text="상태를 선택해 주세요.",
+                                      chat_id=update.callback_query.message.chat_id,
+                                      message_id=update.callback_query.message.message_id,
+                                      reply_markup=show_markup)
 
     elif len(data_selected.split(",")) == 2 :
-        bot.edit_message_text(text="{}이(가) 선택되었습니다".format(update.callback_query.data),
-                              chat_id=update.callback_query.message.chat_id,
-                              message_id=update.callback_query.message.message_id)
+        context.bot.edit_message_text(text="{}이(가) 선택되었습니다".format(update.callback_query.data),
+                                      chat_id=update.callback_query.message.chat_id,
+                                      message_id=update.callback_query.message.message_id)
 ~~~
 
 callback_query.data를 참조하여 **cancel**이 있으면 함수를 종료합니다.
