@@ -106,7 +106,7 @@ def help_command(update, context) :
 
 updater = Updater(my_token, use_context=True)
 
-message_handler = MessageHandler(Filters.text, get_message)
+message_handler = MessageHandler(Filters.text & (~Filters.command), get_message) # 메세지중에서 command 제외
 updater.dispatcher.add_handler(message_handler)
 
 help_handler = CommandHandler('help', help_command)
@@ -162,7 +162,7 @@ def get_photo(update, context) :
 
 updater = Updater(my_token, use_context=True)
 
-message_handler = MessageHandler(Filters.text, get_message)
+message_handler = MessageHandler(Filters.text & (~Filters.command), get_message) # 메세지중에서 command 제외
 updater.dispatcher.add_handler(message_handler)
 
 help_handler = CommandHandler('help', help_command)
@@ -242,7 +242,7 @@ def get_file(update, context) :
 
 updater = Updater(my_token, use_context=True)
 
-message_handler = MessageHandler(Filters.text, get_message)
+message_handler = MessageHandler(Filters.text & (~Filters.command), get_message) # 메세지중에서 command 제외
 updater.dispatcher.add_handler(message_handler)
 
 help_handler = CommandHandler('help', help_command)
